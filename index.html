@@ -131,19 +131,19 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 }
 
 .link-internal:hover {
-    background-color: #555555;
-    color: #ffffff;
+ /*   background-color: #555555;
+    color: #ffffff;*/
     text-decoration: none;
 }
 
 .link-internal:active {
-    background-color: #222222;
+  /*  background-color: #222222;*/
     transform: scale(0.98);
 }
 
 * {
     position: relative; /* Обеспечиваем возможность наложения */
-    overflow-y: scroll; /* Сохраняем прокрутку */
+   /* overflow-y: scroll;  Сохраняем прокрутку */
     scrollbar-width: none; /* Скрыть скроллбар в Firefox */
     -ms-overflow-style: none; /* Скрыть скроллбар в IE */
 }
@@ -268,8 +268,8 @@ $(document).on(':typingcomplete', function (ev) {
 
 (function () {
     var sources = [
-        "https://sun9-67.userapi.com/impg/M_szgw9ouhIo0Eqp-1zbeWyA3ylh9DAsevB0lg/wsB_e5tleCk.jpg?size=1024x1280&quality=96&sign=fb11c7e7e18648bead51f7f4b25b2f94&type=album",
-        "https://github.com/GrickoTheGecko/GameTestTG/blob/main/ezgif.com-gif-to-webm-converter.png?raw=true"
+        "Assets/Bob/idle.png",
+        "Assets/Bob/talking.png"
     ],
         imgCache = window.TwineImgCache = {};
     sources.forEach(function (src) {
@@ -278,7 +278,22 @@ $(document).on(':typingcomplete', function (ev) {
             imgCache[src].src = src;
         }
     });
-}());</script><tw-passagedata pid="1" name="Entry Point" tags="" position="800,300" size="200,100">&lt;&lt;type 60ms&gt;&gt;Хочешь пройти тест на проф ориентацию?
+}());
+
+
+async function get_authors() {
+    $.ajax({
+        url: 'https://fake-json-api.mock.beeceptor.com/users',
+        type: 'GET',
+        dataType: 'json',
+        data: '',
+        success(data) {
+          console.log(data);
+        },
+    });
+}
+
+get_authors();</script><tw-passagedata pid="1" name="Entry Point" tags="" position="800,300" size="200,100">&lt;&lt;type 60ms&gt;&gt;Хочешь пройти тест на проф ориентацию?
 
 [[Давай|Вопрос 1]]&lt;&lt;/type&gt;&gt;
 &lt;&lt;set $Dev to 0&gt;&gt;
