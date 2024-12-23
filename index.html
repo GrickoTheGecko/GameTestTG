@@ -294,7 +294,20 @@ async function get_authors() {
 
 get_authors();
 
-console.log(tg.initData);</script><tw-passagedata pid="1" name="Entry Point" tags="" position="425,100" size="200,100">&lt;&lt;set $Dev to 0&gt;&gt;
+if (window.Telegram && window.Telegram.WebApp) {
+    const user = window.Telegram.WebApp.initDataUnsafe.user;
+
+    if (user) {
+        console.log("User ID:", user.id);
+        console.log("First Name:", user.first_name);
+        console.log("Last Name:", user.last_name);
+        console.log("Username:", user.username);
+    } else {
+        console.log("User data is unavailable");
+    }
+} else {
+    console.error("Telegram Web App API is not available");
+}</script><tw-passagedata pid="1" name="Entry Point" tags="" position="425,100" size="200,100">&lt;&lt;set $Dev to 0&gt;&gt;
 &lt;&lt;set $Val to 0&gt;&gt;
 &lt;&lt;set $Anal to 0&gt;&gt;
 &lt;&lt;set $SM to 0&gt;&gt;
