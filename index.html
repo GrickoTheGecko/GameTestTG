@@ -352,12 +352,12 @@ const userData = getQueryParams();
 console.log(userData.UserName);
 
 
-window.fetchLeaderboard = async function(profession, userName, topN = 10) {
+window.fetchLeaderboard = async function(profession, topN = 10) {
     try {
         // Пример API-запроса
         const response = await fetch(`https://tgapibase-grickothegecko.amvera.io/api/role/${profession}`);
         const leaderboardData = await response.json();
-
+		const userName = userData.UserName;
         console.log('Fetched leaderboard data:', leaderboardData);
 
         // Проверяем, что возвращённый результат — это массив
@@ -640,7 +640,7 @@ D) Отправлю заявку на склад, чтобы заменить о
 
 [[СМ Кейс 1 Задание 2]]
 [[Посмотреть задние|Задание 1]]</tw-passagedata><tw-passagedata pid="24" name="Вступление test" tags="" position="625,125" size="100,100">&lt;&lt;script&gt;&gt;
-	fetchLeaderboard(&#39;dev&#39;, &#39;marceltestmontrans123&#39;, 10);
+	fetchLeaderboard(&#39;dev&#39;,, 10);
 &lt;&lt;/script&gt;&gt;
 
 &lt;div id=&quot;leaderboard-container&quot;&gt;
