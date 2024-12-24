@@ -104,7 +104,10 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="Montrans игра" startnode="1" creator="Twine" creator-version="2.10.0" format="SugarCube" format-version="2.37.3" ifid="A71F3F64-DB0B-40ED-B147-A1D22D486B68" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.passage {
+	<tw-storydata name="Montrans игра" startnode="1" creator="Twine" creator-version="2.10.0" format="SugarCube" format-version="2.37.3" ifid="A71F3F64-DB0B-40ED-B147-A1D22D486B68" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
+
+.passage {
     line-height: 1.25;
 }
 
@@ -118,8 +121,8 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
     width: 90%;
     margin: 0 auto;
     padding: 16px;
-    font-size: 16px;
-/*    font-family: 'Arial', sans-serif; */
+/*    font-size: 16px;
+    font-family: 'Arial', sans-serif; */
     text-align: center;
 /*    text-decoration: none; */
     color: #ffffff;
@@ -137,11 +140,17 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 }
 
 .link-internal:active {
-  /*  background-color: #222222;*/
-    transform: scale(0.98);
+  /*  background-color: #222222;
+    transform: scale(0.98);*/
 }
 
 * {
+
+    font-family: "Neucha", serif;
+    font-style: normal;
+  	font-size: 20px;
+     letter-spacing: 1px;
+  	word-spacing: 5px; 
     position: relative; /* Обеспечиваем возможность наложения */
    /* overflow-y: scroll;  Сохраняем прокрутку */
     scrollbar-width: none; /* Скрыть скроллбар в Firefox */
@@ -152,25 +161,39 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
     display: none; /* Скрыть скроллбар в Chrome/Safari */
 }
 
+#sprite-container {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Располагаем элементы вертикально */
+    align-items: center; /* Центруем содержимое по горизонтали */
+    width: 100%;
+    max-width: 700px; /* Ограничение по ширине */
+    margin: 0 auto; /* Центрируем контейнер на странице */
+}
+
+#sprite-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .text-panel {
-    position: absolute;
-    bottom: 30px; /* Расстояние от нижней границы */
-    left: 50%;
-    transform: translateX(-50%); /* Центровка по горизонтали */
-    background: rgba(0, 0, 0, 0.7); /* Полупрозрачный чёрный фон */
+    background: rgba(0, 0, 0, 0.7); /* Полупрозрачный черный фон */
     color: #fff; /* Цвет текста */
-    padding: 16px;
-    border-radius: 10px; /* Скруглённые углы */
-    width: 90%; /* Ширина окна диалога */
-    max-width: 700px; /* Максимальная ширина */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Тень для объёма */
-    font-family: Arial, sans-serif; /* Шрифт */
-    font-size: 18px; /* Размер текста */
-    line-height: 1.5; /* Межстрочный интервал */
-    text-align: center; /* Выравнивание текста по центру */
+    padding: 16px; /* Отступы */
+ /*   border-radius: 0 0 10px 10px;  Скругленные углы снизу */
+ /*   width: 100%;  Ширина панели */
+ /*   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);  Тень */
+ /*   font-family: Arial, sans-serif;  Шрифт */
+ /*   font-size: 16px;  Размер текста */
+ /*   line-height: 1.5;  Межстрочный интервал */
+    text-align: center; /* Центрирование текста */
+    box-sizing: border-box; /* Включаем отступы в размеры */
+   margin-top: -21px; /*  Отступ между изображением и текстом */
 }
 
 
+/* */
 
 
 
@@ -661,10 +684,10 @@ window.Get_anthveres = function(){
         &quot;4&quot;:&quot;&quot;
     },
         &quot;Case 2&quot;: {
-        &quot;1&quot;: &quot;&quot;,
-        &quot;2&quot;: &quot;&quot;,
-        &quot;3&quot;: &quot;&quot;,
-        &quot;4&quot;:&quot;&quot;
+        &quot;5&quot;: &quot;&quot;,
+        &quot;6&quot;: &quot;&quot;,
+        &quot;7&quot;: &quot;&quot;,
+        &quot;8&quot;:&quot;&quot;
     },
     &quot;Time&quot;: &quot;&quot;
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="23" name="СМ Кейс 1 Задание 1" tags="" position="500,2375" size="100,100">1. Что вы сделаете в первую очередь?
