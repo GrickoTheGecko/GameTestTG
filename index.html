@@ -183,15 +183,17 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
     width: 300px;
     margin: 20px auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #444;
     border-radius: 10px;
-    background-color: #f9f9f9;
+    background-color: #2c2c2c; /* Тёмный фон */
+    color: #f9f9f9; /* Светлый текст */
 }
 
 #leaderboard-title {
     text-align: center;
     font-size: 20px;
     margin-bottom: 15px;
+    color: #fff; /* Белый текст заголовка */
 }
 
 #leaderboard {
@@ -203,20 +205,21 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
     padding: 8px 10px;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #555; /* Более светлая линия */
     font-size: 16px;
+    color: #ccc; /* Цвет текста */
 }
 
 #leaderboard li.highlight {
-    background-color: #e0f7fa;
+    background-color: #4caf50; /* Зелёный фон для выделения */
     font-weight: bold;
-    color: #00796b;
+    color: #fff; /* Белый текст */
 }
 
 #leaderboard li.more {
     text-align: center;
     font-style: italic;
-    color: #666;
+    color: #888; /* Серый текст для троеточия */
     border: none;
 }
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">$(document).ready(function() {
