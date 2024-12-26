@@ -492,12 +492,33 @@ window.endTimer = function() {
 }
 
 
-window.Get_anthveres = function(){
+window.Get_anthveres = function(role){
     let jsonString = State.getVar('$Ansveres');
     jsonString["Time"] = endTimer();
   	jsonString["UserName"] = userData;
   	
     console.log(jsonString); // Проверка результата в консоли
+  
+    fetch(`https://tgapibase-grickothegecko.amvera.io/api/add-score/${role}`, {
+          method: "POST",
+          headers: {
+              "Content-Type": "application/json",
+          },
+          body: JSON.stringify(jsonString),
+      })
+          .then(response => {
+            if (response.ok) {
+                return response.json(); // Если нужно обработать ответ
+            } else {
+                throw new Error("Network response was not ok");
+            }
+        })
+        .then(data => {
+            console.log("Server response:", data);
+        })
+        .catch(error => {
+            console.error("Error sending POST request:", error);
+        });
 }</script><tw-passagedata pid="1" name="Entry Point" tags="" position="700,0" size="200,100">&lt;&lt;set $Dev to 0&gt;&gt;
 &lt;&lt;set $Val to 0&gt;&gt;
 &lt;&lt;set $Anal to 0&gt;&gt;
@@ -743,8 +764,11 @@ window.Get_anthveres = function(){
 [[Уведомлю клиента о завершении работ без записи в системе.|СМ Кейс 2][$Ansveres[&quot;Case 1&quot;][&quot;4&quot;] to&quot;D&quot;]]
 
 [[Посмотреть задние|Задание 1]]</tw-passagedata><tw-passagedata pid="26" name="СМ Кейс 2" tags="" position="500,2875" size="100,100">&lt;script&gt;
-	Get_anthveres();
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="27" name="Задание 1" tags="" position="175,2600" size="100,100">Клиент, компания&lt;b&gt; &quot;ТехноПлюс&quot;&lt;/b&gt;, обратился в сервисный отдел с жалобой на нестабильную работу системы GPS-навигации. Проблема касается одного из объектов компании — крупного логистического склада, где используются грузоподъёмные машины.
+	Get_anthveres(&quot;SM&quot;);
+&lt;/script&gt;
+
+&lt;&lt;goto  [[Лидерборд]]&gt;&gt;
+</tw-passagedata><tw-passagedata pid="27" name="Задание 1" tags="" position="175,2600" size="100,100">Клиент, компания&lt;b&gt; &quot;ТехноПлюс&quot;&lt;/b&gt;, обратился в сервисный отдел с жалобой на нестабильную работу системы GPS-навигации. Проблема касается одного из объектов компании — крупного логистического склада, где используются грузоподъёмные машины.
 
 По словам клиента, через неделю после установки нового GPS-трекера NavTrack X300 на погрузчике начали происходить сбои:
 *Точки на карте стали &quot;скакать&quot; и периодически исчезать.
