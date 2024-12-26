@@ -497,7 +497,7 @@ window.endTimer = function() {
 window.Get_anthveres = function(role){
     let jsonString = State.getVar('$Ansveres');
     jsonString["Time"] = endTimer();
-  	jsonString["UserName"] = userData.UserName;
+  	jsonString["username"] = userData.UserName;
   	
     console.log(jsonString); // Проверка результата в консоли
   
@@ -730,7 +730,7 @@ window.Get_anthveres = function(role){
         &quot;8&quot;:&quot;&quot;
     },
     &quot;Time&quot;: &quot;&quot;,
-    &quot;UserName&quot;: &quot;&quot;
+    &quot;username&quot;: &quot;&quot;
 }&gt;&gt;
 
 &lt;&lt;script&gt;&gt;
