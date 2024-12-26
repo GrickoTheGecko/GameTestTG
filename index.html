@@ -377,7 +377,8 @@ function getQueryParams() {
     const params = new URLSearchParams(window.location.search);
     return {
         UserName: params.get("username"),
-      	UserStatus: params.get("status")
+      	UserStatus: params.get("status"),
+      	UserRole: params.get("role")
     };
 }
 
@@ -385,6 +386,7 @@ const userData = getQueryParams();
 
 window.SetStatus = function(){
 	State.setVar('$UserStatus', userData.UserStatus);
+  	State.setVar('$UserRole', userData.UserRole);
 }
 
 console.log(userData);
@@ -495,7 +497,7 @@ window.endTimer = function() {
 window.Get_anthveres = function(role){
     let jsonString = State.getVar('$Ansveres');
     jsonString["Time"] = endTimer();
-  	jsonString["UserName"] = userData;
+  	jsonString["UserName"] = userData.UserName;
   	
     console.log(jsonString); // Проверка результата в консоли
   
@@ -524,6 +526,7 @@ window.Get_anthveres = function(role){
 &lt;&lt;set $Anal to 0&gt;&gt;
 &lt;&lt;set $SM to 0&gt;&gt;
 &lt;&lt;set $UserStatus to &quot;&quot;&gt;&gt;
+&lt;&lt;set $UserRole to &quot;&quot;&gt;&gt;
 
 &lt;&lt;set $sprites to {
     &quot;HR&quot;: {
@@ -746,7 +749,7 @@ window.Get_anthveres = function(role){
 &lt;/div&gt;
 
 &lt;&lt;script&gt;&gt;
-	fetchLeaderboard(&#39;dev&#39;, 10);
+	fetchLeaderboard(State.getVar(&#39;$UserRole&#39;), 10);
 &lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="24" name="СМ Кейс 1 Задание 3" tags="" position="500,2625" size="100,100">3. Инженер сообщает, что проблема в неисправном GPS-модуле. Каковы ваши дальнейшие действия?
 
 
@@ -767,6 +770,7 @@ window.Get_anthveres = function(role){
 	Get_anthveres(&quot;SM&quot;);
 &lt;/script&gt;
 
+&lt;&lt;set $UserRole to &quot;SM&quot;&gt;&gt;
 &lt;&lt;goto  [[Лидерборд]]&gt;&gt;
 </tw-passagedata><tw-passagedata pid="27" name="Задание 1" tags="" position="175,2600" size="100,100">Клиент, компания&lt;b&gt; &quot;ТехноПлюс&quot;&lt;/b&gt;, обратился в сервисный отдел с жалобой на нестабильную работу системы GPS-навигации. Проблема касается одного из объектов компании — крупного логистического склада, где используются грузоподъёмные машины.
 
