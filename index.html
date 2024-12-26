@@ -500,7 +500,8 @@ window.Get_anthveres = function(role){
   	jsonString["username"] = userData.UserName;
   	
     console.log(jsonString); // Проверка результата в консоли
-  
+    console.log(JSON.stringify(jsonString)); // Проверка результата в консоли
+
     fetch(`https://tgapibase-grickothegecko.amvera.io/api/add-score/${role}`, {
           method: "POST",
           headers: {
