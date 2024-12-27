@@ -664,52 +664,50 @@ window.Get_anthveres = function(role){
 &lt;&lt;set $currentCharacter = &quot;Alice&quot;&gt;&gt;
 &lt;&lt;type 50ms&gt;&gt;
     Привет! Меня зовут Алиса. Я рада тебя видеть.
-&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="Вопрос 1" tags="" position="800,500" size="100,100">&lt;&lt;set $text=&quot;Что вам нравится больше в работе?&quot;&gt;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="Вопрос 1" tags="" position="800,500" size="100,100">&lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;set $text=&quot;Что вам нравится больше в работе?&quot;&gt;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/HR/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;$text&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;&lt;timed `(($text.length * 0.08)) + &quot;s&quot;`&gt;&gt;[[Разрабатывать решения и визуализации для автоматизации работы с данными|Вопрос 2][$Dev += 1]]
 [[Создавать аналитические отчеты, визуализировать данные и помогать клиентам в их интерпретации|Вопрос 2][$Anal += 1]]
 [[Взаимодействовать с клиентами, организовывать работу и обеспечивать поддержку|Вопрос 2][$SM += 1]]
-[[Выявлять ошибки, проверять данные и исправлять неточности|Вопрос 2][$Val += 1]]
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Вопрос 2" tags="" position="800,625" size="100,100">&lt;&lt;set $text=&quot;Какой из сценариев вам кажется наиболее интересным?&quot;&gt;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+[[Выявлять ошибки, проверять данные и исправлять неточности|Вопрос 2][$Val += 1]]&lt;&lt;/timed&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="Вопрос 2" tags="" position="800,625" size="100,100">&lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;set $text=&quot;Какой из сценариев вам кажется наиболее интересным?&quot;&gt;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/HR/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;$text&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;&lt;timed `(($text.length * 0.08)) + &quot;s&quot;`&gt;&gt;[[Проверить блок событий и очистить ложные данные, влияющие на точность отчетов|Вопрос 3][$Val += 1]]
 [[Разработать дашборд для анализа данных и улучшить его интерфейс|Вопрос 3][$Dev += 1]]
 [[Организовать выезд инженера для настройки оборудования клиента и решить проблему|Вопрос 3][$SM += 1]]
-[[Подготовить аналитику по запросу клиента и согласовать доработки|Вопрос 3][$Anal += 1]]
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="Вопрос 3" tags="" position="800,750" size="100,100">&lt;&lt;set $text=&quot;Что вас больше всего мотивирует?&quot;&gt;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+[[Подготовить аналитику по запросу клиента и согласовать доработки|Вопрос 3][$Anal += 1]]&lt;&lt;/timed&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="Вопрос 3" tags="" position="800,750" size="100,100">&lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;set $text=&quot;Что вас больше всего мотивирует?&quot;&gt;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/HR/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;$text&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;&lt;timed `(($text.length * 0.08)) + &quot;s&quot;`&gt;&gt;[[Возможность анализировать данные и делать их понятными для других|Вопрос 4][$Anal += 1]]
 [[Решение сложных технических задач и автоматизация процессов|Вопрос 4][$Dev += 1]]
 [[Помощь клиентам и координация различных команд|Вопрос 4][$SM += 1]]
-[[Точность и чистота данных в отчетах|Вопрос 4][$Val += 1]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="Вопрос 4" tags="" position="800,875" size="100,100">&lt;&lt;set $text=&quot;Какую задачу вы выбрали бы из списка?&quot;&gt;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+[[Точность и чистота данных в отчетах|Вопрос 4][$Val += 1]]&lt;&lt;/timed&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name="Вопрос 4" tags="" position="800,875" size="100,100">&lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;set $text=&quot;Какую задачу вы выбрали бы из списка?&quot;&gt;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/HR/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;$text&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;&lt;timed `(($text.length * 0.07)) + &quot;s&quot;`&gt;&gt;[[Разработать концепцию дашборда для визуализации данных клиента|Вопрос 5][$Anal += 1]]
 [[Создать BI-приложение с уникальной структурой отчетов и визуализаций|Вопрос 5][$Dev += 1]]
 [[Настроить оборудование клиента и подготовить сервисное предложение|Вопрос 5][$SM += 1]]
-[[Удалить ложные события из отчетов и уведомить коллег о необходимости перенастройки|Вопрос 5][$Val += 1]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="Вопрос 5" tags="" position="800,1000" size="100,100">&lt;&lt;set $text=&quot;Какой результат вы считаете успехом своей работы?&quot;&gt;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+[[Удалить ложные события из отчетов и уведомить коллег о необходимости перенастройки|Вопрос 5][$Val += 1]]&lt;&lt;/timed&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name="Вопрос 5" tags="" position="800,1000" size="100,100">&lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;set $text=&quot;Какой результат вы считаете успехом своей работы?&quot;&gt;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/HR/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;$text&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;&lt;timed `(($text.length * 0.07)) + &quot;s&quot;`&gt;&gt;[[Все отчеты точны, данные очищены от ошибок|Обработка][$Val += 1]]
 [[Клиент доволен качеством обслуживания и своевременной поддержкой|Обработка][$SM += 1]]
 [[Готовый аналитический инструмент, которым клиент может легко пользоваться|Обработка][$Anal += 1]]
-[[Рабочее приложение, которое помогает пользователям принимать решения на основе данных|Обработка][$Dev += 1]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="9" name="Вступление" tags="" position="800,250" size="100,100">&lt;div id=&quot;sprite-container&quot;&gt;
+[[Рабочее приложение, которое помогает пользователям принимать решения на основе данных|Обработка][$Dev += 1]]&lt;&lt;/timed&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="9" name="Вступление" tags="" position="800,250" size="100,100">&lt;div class=&quot;text-panel&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/HR/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Добро пожаловать! Мы рады видеть вас среди участников нашей стажировки. Здесь у вас будет уникальная возможность узнать больше о нашей компании, изучить профессию изнутри и даже попробовать свои силы в реальных рабочих задачах. Обычно это занимает не больше десяти минут.&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 &lt;/div&gt; 
-[[Вступление 1]]</tw-passagedata><tw-passagedata pid="10" name="Вступление 1" tags="" position="800,375" size="100,100">&lt;div id=&quot;sprite-container&quot;&gt;
+[[Вступление 1]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="10" name="Вступление 1" tags="" position="800,375" size="100,100">&lt;div class=&quot;text-panel&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/HR/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Для начала я бы хотел узнать немного больше о вас. У каждого человека есть свои сильные стороны и профессиональные интересы. Чтобы мы смогли подобрать для вас направление, максимально соответствующее вашим навыкам и склонностям, я задам несколько вопросов.&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 &lt;/div&gt; 
-[[Приступить к тесту|Вопрос 1]]</tw-passagedata><tw-passagedata pid="11" name="СМ Кейс 1 Задание 2" tags="" position="500,2500" size="100,100">2. Настройки в системе оказались корректными. Что вы сделаете дальше?
+[[Приступить к тесту|Вопрос 1]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="11" name="СМ Кейс 1 Задание 2" tags="" position="500,2500" size="100,100">&lt;div class=&quot;text-panel&quot;&gt;2. Настройки в системе оказались корректными. Что вы сделаете дальше?
 
 
 [[Сообщу клиенту, что проблема в их сети и нам нечего исправлять.|СМ Кейс 1 Задание 3][$Ansveres[&quot;Case1&quot;][&quot;2&quot;] to&quot;A&quot;]]
@@ -717,7 +715,7 @@ window.Get_anthveres = function(role){
 [[Проведу дополнительные тесты и попытаюсь диагностировать проблему удалённо.|СМ Кейс 1 Задание 3][$Ansveres[&quot;Case1&quot;][&quot;2&quot;] to&quot;C&quot;]]
 [[Свяжусь с аналитиком, чтобы проверить данные о пробеге.|СМ Кейс 1 Задание 3][$Ansveres[&quot;Case1&quot;][&quot;2&quot;] to&quot;D&quot;]]
 
-[[Посмотреть задние|Задание 1]]</tw-passagedata><tw-passagedata pid="12" name="Обработка" tags="" position="1000,1125" size="100,100">&lt;&lt;set $prof to {
+[[Посмотреть задние|Задание 1]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="12" name="Обработка" tags="" position="1000,1125" size="100,100">&lt;&lt;set $prof to {
     &quot;Разработчик&quot;: $Dev,
     &quot;Валидатор&quot;: $Val,
     &quot;Аналитик&quot;: $Anal,
@@ -727,40 +725,40 @@ window.Get_anthveres = function(role){
 &lt;&lt;set $maxStat to Math.max(...Object.values($prof))&gt;&gt;
 &lt;&lt;set $maxKey to Object.keys($prof).find(key =&gt; $prof[key] === $maxStat)&gt;&gt;
 
-&lt;&lt;goto  [[Результаты]] &gt;&gt;</tw-passagedata><tw-passagedata pid="13" name="Результаты" tags="" position="800,1250" size="100,100">&lt;div id=&quot;sprite-container&quot;&gt;
+&lt;&lt;goto  [[Результаты]] &gt;&gt;</tw-passagedata><tw-passagedata pid="13" name="Результаты" tags="" position="800,1250" size="100,100">&lt;div class=&quot;text-panel&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/HR/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Ваш результат: $maxKey&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 &lt;/div&gt;
 [[СМ 1][$currentCharacter = &quot;SM&quot;]]
-[[Аналитик 1][$currentCharacter = &quot;Anal&quot;]]</tw-passagedata><tw-passagedata pid="14" name="СМ 1" tags="" position="500,1375" size="100,100">&lt;div id=&quot;sprite-container&quot;&gt;
+[[Аналитик 1][$currentCharacter = &quot;Anal&quot;]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="14" name="СМ 1" tags="" position="500,1375" size="100,100">&lt;div class=&quot;text-panel&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/SM/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Привет! Меня зовут Сергей, и я один из сервисных менеджеров нашей компании. Рад познакомиться! Понимаю, что вы здесь, чтобы узнать, чем мы занимаемся и как это влияет на общую работу.&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 &lt;/div&gt; 
-[[СМ 2]]</tw-passagedata><tw-passagedata pid="15" name="СМ 2" tags="" position="500,1500" size="100,100">&lt;div id=&quot;sprite-container&quot;&gt;
+[[СМ 2]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="15" name="СМ 2" tags="" position="500,1500" size="100,100">&lt;div class=&quot;text-panel&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/SM/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;В двух словах, мы здесь на передовой работы с клиентами. Моя задача — сделать так, чтобы всё оборудование наших заказчиков работало как часы. Это может быть установка новых устройств, настройка систем или оперативное устранение неполадок.&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 &lt;/div&gt; 
-[[СМ 3]]</tw-passagedata><tw-passagedata pid="16" name="СМ 3" tags="" position="500,1625" size="100,100">&lt;div id=&quot;sprite-container&quot;&gt;
+[[СМ 3]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="16" name="СМ 3" tags="" position="500,1625" size="100,100">&lt;div class=&quot;text-panel&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/SM/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Вот типичный сценарий. Клиент звонит и говорит, что хочет оснастить свой объект оборудованием. Сначала я выясняю, какое именно оборудование им нужно и для каких задач. Затем готовлю предложение, организую выезд инженеров и слежу, чтобы всё было сделано вовремя.&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 &lt;/div&gt; 
-[[СМ 4]]</tw-passagedata><tw-passagedata pid="17" name="СМ 4" tags="" position="500,1750" size="100,100">&lt;div id=&quot;sprite-container&quot;&gt;
+[[СМ 4]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="17" name="СМ 4" tags="" position="500,1750" size="100,100">&lt;div class=&quot;text-panel&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/SM/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Вот типичный сценарий. Клиент звонит и говорит, что хочет оснастить свой объект оборудованием. Сначала я выясняю, какое именно оборудование им нужно и для каких задач. Затем готовлю предложение, организую выезд инженеров и слежу, чтобы всё было сделано вовремя.&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 &lt;/div&gt; 
-[[СМ 5]]</tw-passagedata><tw-passagedata pid="18" name="СМ 5" tags="" position="500,1875" size="100,100">&lt;div id=&quot;sprite-container&quot;&gt;
+[[СМ 5]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="18" name="СМ 5" tags="" position="500,1875" size="100,100">&lt;div class=&quot;text-panel&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/SM/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Помимо этого, мы ведём постоянную поддержку наших инженеров, занимаемся технической документацией и иногда даже продаём оборудование. Так что задач у нас много, но это делает работу ещё интереснее.&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 &lt;/div&gt; 
-[[СМ 6]]</tw-passagedata><tw-passagedata pid="19" name="СМ 6" tags="" position="500,2000" size="100,100">&lt;div id=&quot;sprite-container&quot;&gt;
+[[СМ 6]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="19" name="СМ 6" tags="" position="500,2000" size="100,100">&lt;div class=&quot;text-panel&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/SM/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Вот, взгляните на эту заявку. Это реальный пример того, с чем мы сталкиваемся каждый день. У клиента неисправна система связи, и нам нужно решить эту проблему. Для начала я проверяю настройки оборудования в системе и связываюсь с инженерами.&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 &lt;/div&gt; 
-[[СМ 7]]</tw-passagedata><tw-passagedata pid="20" name="СМ 7" tags="" position="500,2125" size="100,100">&lt;div id=&quot;sprite-container&quot;&gt;
+[[СМ 7]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="20" name="СМ 7" tags="" position="500,2125" size="100,100">&lt;div class=&quot;text-panel&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/SM/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Но это ещё не всё. Сейчас я подготовлю для вас небольшое задание, чтобы вы могли почувствовать себя частью нашей команды.&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 &lt;/div&gt; 
-[[СМ Кейс 1]]</tw-passagedata><tw-passagedata pid="21" name="СМ Кейс 1" tags="" position="500,2250" size="100,100">Клиент, компания&lt;b&gt; &quot;ТехноПлюс&quot;&lt;/b&gt;, обратился в сервисный отдел с жалобой на нестабильную работу системы GPS-навигации. Проблема касается одного из объектов компании — крупного логистического склада, где используются грузоподъёмные машины.
+[[СМ Кейс 1]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="21" name="СМ Кейс 1" tags="" position="500,2250" size="100,100">&lt;div class=&quot;text-panel&quot;&gt;Клиент, компания&lt;b&gt; &quot;ТехноПлюс&quot;&lt;/b&gt;, обратился в сервисный отдел с жалобой на нестабильную работу системы GPS-навигации. Проблема касается одного из объектов компании — крупного логистического склада, где используются грузоподъёмные машины.
 
 По словам клиента, через неделю после установки нового GPS-трекера NavTrack X300 на погрузчике начали происходить сбои:
 *Точки на карте стали &quot;скакать&quot; и периодически исчезать.
@@ -777,7 +775,7 @@ window.Get_anthveres = function(role){
 &lt;b&gt;Ваши задачи:&lt;/b&gt;
 &lt;ol&gt;&lt;li&gt;Проанализировать предоставленную информацию и понять, что может вызывать проблему.&lt;/li&gt;
 &lt;li&gt;Предложить оптимальный план действий для её устранения.&lt;/li&gt;&lt;/ol&gt;
-[[Далее|СМ Кейс 1 Задание 1]]
+[[Далее|СМ Кейс 1 Задание 1]]&lt;/div&gt;
 
 &lt;&lt;set $Ansveres to {
     &quot;Case1&quot;: {
@@ -798,22 +796,24 @@ window.Get_anthveres = function(role){
 
 &lt;&lt;script&gt;&gt;
 	startTimer();
-&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="22" name="СМ Кейс 1 Задание 1" tags="" position="500,2375" size="100,100">1. Что вы сделаете в первую очередь?
+&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="22" name="СМ Кейс 1 Задание 1" tags="" position="500,2375" size="100,100">&lt;div class=&quot;text-panel&quot;&gt;1. Что вы сделаете в первую очередь?
 
 [[Проверю удалённые настройки оборудования в системе и попытаюсь исправить их.|СМ Кейс 1 Задание 2][$Ansveres[&quot;Case1&quot;][&quot;1&quot;] to&quot;A&quot;]]
 [[Сразу отправлю инженера на объект для устранения проблемы.|СМ Кейс 1 Задание 2][$Ansveres[&quot;Case1&quot;][&quot;1&quot;] to&quot;B&quot;]]
 [[Свяжусь с клиентом, чтобы уточнить детали проблемы.|СМ Кейс 1 Задание 2][$Ansveres[&quot;Case1&quot;][&quot;1&quot;] to&quot;C&quot;]]
 [[Отправлю заявку на склад, чтобы заменить оборудование.|СМ Кейс 1 Задание 2][$Ansveres[&quot;Case1&quot;][&quot;1&quot;] to&quot;D&quot;]]
 
-[[Посмотреть задние|Задание 1]]
-</tw-passagedata><tw-passagedata pid="23" name="Лидерборд" tags="" position="625,125" size="100,100">&lt;div id=&quot;leaderboard-container&quot;&gt;
+[[Посмотреть задние|Задание 1]]&lt;/div&gt;
+</tw-passagedata><tw-passagedata pid="23" name="Лидерборд" tags="" position="625,125" size="100,100">&lt;div class=&quot;text-panel&quot;&gt;&lt;div id=&quot;leaderboard-container&quot;&gt;
     &lt;h2 id=&quot;leaderboard-title&quot;&gt;Лидерборд &lt;span id=&quot;profession-name&quot;&gt;&lt;/span&gt;&lt;/h2&gt;
     &lt;ul id=&quot;leaderboard&quot;&gt;&lt;/ul&gt;
-&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;
 
+&lt;&lt;timed 1s&gt;&gt;
 &lt;&lt;script&gt;&gt;
 	fetchLeaderboard(State.getVar(&#39;$UserRole&#39;, 10));
-&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="24" name="СМ Кейс 1 Задание 3" tags="" position="500,2625" size="100,100">3. Инженер сообщает, что проблема в неисправном GPS-модуле. Каковы ваши дальнейшие действия?
+&lt;&lt;/script&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="24" name="СМ Кейс 1 Задание 3" tags="" position="500,2625" size="100,100">&lt;div class=&quot;text-panel&quot;&gt;3. Инженер сообщает, что проблема в неисправном GPS-модуле. Каковы ваши дальнейшие действия?
 
 
 [[Сообщу клиенту о необходимости замены оборудования и организую его доставку.|СМ Кейс 1 Задание 4][$Ansveres[&quot;Case1&quot;][&quot;3&quot;] to&quot;A&quot;]]
@@ -821,7 +821,7 @@ window.Get_anthveres = function(role){
 [[Проигнорирую неисправность и закрою заявку.|СМ Кейс 1 Задание 4][$Ansveres[&quot;Case1&quot;][&quot;3&quot;] to&quot;C&quot;]]
 [[Отправлю неисправное оборудование обратно на склад для ремонта.|СМ Кейс 1 Задание 4][$Ansveres[&quot;Case1&quot;][&quot;3&quot;] to&quot;D&quot;]]
 
-[[Посмотреть задние|Задание 1]]</tw-passagedata><tw-passagedata pid="25" name="СМ Кейс 1 Задание 4" tags="" position="475,2775" size="100,100">4. Как вы оформите решение задачи в системе?
+[[Посмотреть задние|Задание 1]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="25" name="СМ Кейс 1 Задание 4" tags="" position="500,2750" size="100,100">&lt;div class=&quot;text-panel&quot;&gt;4. Как вы оформите решение задачи в системе?
 
 
 [[Укажу, что проблема устранена, и оставлю подробные комментарии.|СМ Кейс 2][$Ansveres[&quot;Case1&quot;][&quot;4&quot;] to&quot;A&quot;]]
@@ -829,11 +829,11 @@ window.Get_anthveres = function(role){
 [[Напишу отчёт для руководителя, но не обновлю заявку в системе.|СМ Кейс 2][$Ansveres[&quot;Case1&quot;][&quot;4&quot;] to&quot;C&quot;]]
 [[Уведомлю клиента о завершении работ без записи в системе.|СМ Кейс 2][$Ansveres[&quot;Case1&quot;][&quot;4&quot;] to&quot;D&quot;]]
 
-[[Посмотреть задние|Задание 1]]</tw-passagedata><tw-passagedata pid="26" name="СМ Кейс 2" tags="" position="475,2950" size="100,100">&lt;script&gt;
+[[Посмотреть задние|Задание 1]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="26" name="СМ Кейс 2" tags="" position="400,3000" size="100,100">&lt;script&gt;
 	Get_anthveres(&quot;SM&quot;);
 &lt;/script&gt;
 
-&lt;&lt;goto  [[Переход на лидерборд]]&gt;&gt;</tw-passagedata><tw-passagedata pid="27" name="Задание 1" tags="" position="175,2600" size="100,100">Клиент, компания&lt;b&gt; &quot;ТехноПлюс&quot;&lt;/b&gt;, обратился в сервисный отдел с жалобой на нестабильную работу системы GPS-навигации. Проблема касается одного из объектов компании — крупного логистического склада, где используются грузоподъёмные машины.
+&lt;&lt;goto  [[Переход на лидерборд]]&gt;&gt;</tw-passagedata><tw-passagedata pid="27" name="Задание 1" tags="" position="250,2500" size="100,100">&lt;div class=&quot;text-panel&quot;&gt;Клиент, компания&lt;b&gt; &quot;ТехноПлюс&quot;&lt;/b&gt;, обратился в сервисный отдел с жалобой на нестабильную работу системы GPS-навигации. Проблема касается одного из объектов компании — крупного логистического склада, где используются грузоподъёмные машины.
 
 По словам клиента, через неделю после установки нового GPS-трекера NavTrack X300 на погрузчике начали происходить сбои:
 *Точки на карте стали &quot;скакать&quot; и периодически исчезать.
@@ -852,7 +852,7 @@ window.Get_anthveres = function(role){
 &lt;li&gt;Предложить оптимальный план действий для её устранения.&lt;/li&gt;&lt;/ol&gt;
 
 
-&lt;&lt;back назад&gt;&gt;</tw-passagedata><tw-passagedata pid="28" name="Отправить результаты" tags="" position="125,900" size="100,100">&lt;script&gt;
+&lt;&lt;back назад&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="28" name="Отправить результаты" tags="" position="125,900" size="100,100">&lt;script&gt;
 	Get_anthveres();
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="29" name="Аналитик 1" tags="" position="700,1375" size="100,100">&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/Anal/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
