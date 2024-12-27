@@ -357,20 +357,24 @@ $(document).on(':typingcomplete', function (ev) {
     setup.onTypeEnd(spriteElement, spriteMap);
 });
 
-
 (function () {
     var sources = [
-        "Assets/HR/idle.png",
-        "Assets/HR/talking.png",
-        "Assets/SM/idle.png",
-        "Assets/SM/talking.png",
-		"Assets/Val/idle.png",
-        "Assets/Val/talking.png",
-		"Assets/Anal/idle.png",
-        "Assets/Anal/talking.png",
-        "Assets/Dev/idle.png",
-        "Assets/Dev/talking.png",
-      	"Assets/Anal/ЭТАН декабрь.png"
+      "Assets/HR/idle.png",
+      "Assets/HR/talking.png",
+      "Assets/SM/idle.png",
+      "Assets/SM/talking.png",
+      "Assets/Val/idle.png",
+      "Assets/Val/talking.png",
+      "Assets/Anal/idle.png",
+      "Assets/Anal/talking.png",
+      "Assets/Dev/idle.png",
+      "Assets/Dev/talking.png",
+      "Assets/Anal/ЭТАН декабрь.png",
+      "Assets/HR/BG.jpg",
+      "Assets/SM/BG.jpg",
+      "Assets/Anal/BG.jpg",
+      "Assets/Val/BG.jpg",
+      "Assets/Dev/BG.jpg"
     ],
         imgCache = window.TwineImgCache = {};
     sources.forEach(function (src) {
@@ -380,6 +384,31 @@ $(document).on(':typingcomplete', function (ev) {
         }
     });
 }());
+
+const passageBackgrounds = {
+  "Entry Point":	"Assets/HR/BG.jpg",
+  "СМ 1": 			"Assets/SM/BG.jpg",
+  "Аналитик 1": 	"Assets/Anal/BG.jpg",
+  "Валидатор 1": 	"Assets/Val/BG.jpg",
+  "Разработчик 1": 	"Assets/Dev/BG.jpg"
+};
+
+        // Обработчик события перед переходом в пассаж
+$(document).on(':passageinit', function (ev) {
+  // Получаем id текущего пассажа
+  const currentPassage = ev.detail.passage.name;
+
+  // Проверяем, если для данного пассажа есть фоновое изображение
+  if (passageBackgrounds[ev.detail.passage.name]) {
+    // Меняем фон на соответствующее изображение
+    $('body').css('background-image', `url('${passageBackgrounds[ev.detail.passage.name]}')`);
+    $('body').css('background-size', 'cover');
+    $('body').css('background-position', 'center center');
+    $('body').css('background-attachment', 'fixed');
+    $('body').css('background-color', '#111111b3');
+    $('body').css('background-blend-mode', 'multiply');
+  }
+});
 
 
 
@@ -576,6 +605,14 @@ window.Get_anthveres = function(role){
         &quot;talking&quot;: &quot;Assets/Dev/talking.png&quot;
     }
 }&gt;&gt;
+
+
+&lt;style&gt;
+    html {
+        background-image: url(&quot;/Assets/Val/BG.jpg&quot;);
+    }
+&lt;/style&gt;
+
 
 &lt;&lt;script&gt;&gt;
     SetStatus();
@@ -792,7 +829,7 @@ window.Get_anthveres = function(role){
 [[Напишу отчёт для руководителя, но не обновлю заявку в системе.|СМ Кейс 2][$Ansveres[&quot;Case1&quot;][&quot;4&quot;] to&quot;C&quot;]]
 [[Уведомлю клиента о завершении работ без записи в системе.|СМ Кейс 2][$Ansveres[&quot;Case1&quot;][&quot;4&quot;] to&quot;D&quot;]]
 
-[[Посмотреть задние|Задание 1]]</tw-passagedata><tw-passagedata pid="26" name="СМ Кейс 2" tags="" position="500,2875" size="100,100">&lt;script&gt;
+[[Посмотреть задние|Задание 1]]</tw-passagedata><tw-passagedata pid="26" name="СМ Кейс 2" tags="" position="350,2950" size="100,100">&lt;script&gt;
 	Get_anthveres(&quot;SM&quot;);
 &lt;/script&gt;
 
@@ -817,7 +854,7 @@ window.Get_anthveres = function(role){
 &lt;li&gt;Предложить оптимальный план действий для её устранения.&lt;/li&gt;&lt;/ol&gt;
 
 
-&lt;&lt;back назад&gt;&gt;</tw-passagedata><tw-passagedata pid="28" name="Отправить результаты" tags="" position="275,1075" size="100,100">&lt;script&gt;
+&lt;&lt;back назад&gt;&gt;</tw-passagedata><tw-passagedata pid="28" name="Отправить результаты" tags="" position="125,900" size="100,100">&lt;script&gt;
 	Get_anthveres();
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="29" name="Аналитик 1" tags="" position="700,1375" size="100,100">&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/Anal/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
