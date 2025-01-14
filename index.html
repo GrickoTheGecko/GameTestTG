@@ -762,9 +762,9 @@ window.Get_anthveres = function(role){
 &lt;&lt;set $maxStat to Math.max(...Object.values($prof))&gt;&gt;
 &lt;&lt;set $maxKey to Object.keys($prof).find(key =&gt; $prof[key] === $maxStat)&gt;&gt;
 
-&lt;&lt;goto  [[Результаты]] &gt;&gt;</tw-passagedata><tw-passagedata pid="21" name="Отправить результаты" tags="" position="125,900" size="100,100"></tw-passagedata><tw-passagedata pid="22" name="Переход на лидерборд" tags="" position="250,3325" size="100,100">&lt;script&gt;
+&lt;&lt;goto  [[Результаты]] &gt;&gt;</tw-passagedata><tw-passagedata pid="21" name="Отправить результаты" tags="" position="125,900" size="100,100"></tw-passagedata><tw-passagedata pid="22" name="Переход на лидерборд" tags="" position="250,3325" size="100,100">&lt;&lt;script&gt;&gt;
 	Get_anthveres(State.getVar(&#39;$UserRole&#39;));
-&lt;/script&gt;
+&lt;&lt;/script&gt;&gt;
 
 &lt;&lt;goto  [[Лидерборд]]&gt;&gt;</tw-passagedata><tw-passagedata pid="23" name="Результаты" tags="" position="800,1250" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/HR/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
@@ -782,7 +782,7 @@ window.Get_anthveres = function(role){
 
 [[СМ 1][$currentCharacter = &quot;SM&quot;]]
 [[Аналитик 1][$currentCharacter = &quot;Anal&quot;]]
-[[Разработчик 1][$currentCharacter = &quot;Dev&quot;]]&lt;/div&gt;
+[[Разработчик 1][$currentCharacter = &quot;Dev&quot;]]
 [[Валидатор 1][$currentCharacter = &quot;Val&quot;]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="24" name="СМ 1" tags="" position="500,1375" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/SM/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Привет! Меня зовут Сергей, и я один из сервисных менеджеров нашей компании. Рад познакомиться! Понимаю, что вы здесь, чтобы узнать, чем мы занимаемся и как это влияет на общую работу.&lt;&lt;/type&gt;&gt;&lt;/div&gt;
@@ -845,9 +845,7 @@ window.Get_anthveres = function(role){
     &quot;username&quot;: &quot;&quot;
 }&gt;&gt;
 
-&lt;&lt;script&gt;&gt;
-	startTimer();
-&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="32" name="СМ Кейс 1 Задание 1" tags="" position="500,2375" size="100,100">&lt;div class=&quot;text-box&quot;&gt;1. Что вы сделаете в первую очередь?
+</tw-passagedata><tw-passagedata pid="32" name="СМ Кейс 1 Задание 1" tags="" position="500,2375" size="100,100">&lt;div class=&quot;text-box&quot;&gt;1. Что вы сделаете в первую очередь?
 
 
 [[Проверю удалённые настройки оборудования в системе и попытаюсь исправить их.|СМ Кейс 1 Задание 2][$Ansveres[&quot;Ansveres&quot;][&quot;1&quot;] to&quot;A&quot;]]
@@ -918,7 +916,11 @@ window.Get_anthveres = function(role){
     },
     &quot;Time&quot;: &quot;&quot;,
     &quot;username&quot;: &quot;&quot;
-}&gt;&gt;</tw-passagedata><tw-passagedata pid="42" name="Разработчик Финал" tags="" position="725,3300" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+}&gt;&gt;
+
+&lt;&lt;script&gt;&gt;
+	startTimer();
+&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="42" name="Разработчик Финал" tags="" position="725,3300" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/Dev/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Работа разработчика — это не просто писать код. Мы также разбираемся в потребностях клиентов. Иногда аналитик говорит: &quot;Сделай мне отчёт, чтобы видеть всё о расходах топлива&quot;. Но без чёткого запроса к базе данных работа с ней может превратиться в непростую задачу.&lt;&lt;/type&gt;&gt;&lt;/div&gt;&lt;/div&gt;
     
