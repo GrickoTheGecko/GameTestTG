@@ -770,13 +770,13 @@ window.Get_anthveres = function(role){
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/HR/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Поздравляю! Ты успешно прошел тест и, судя по результатам, твои сильные стороны подходят для профессии $maxKey. Теперь тебя ждет знакомство с одним из наших специалистов, который расскажет тебе больше о том, что тебя ждёт на этой позиции. Готов к следующему шагу?&lt;&lt;/type&gt;&gt;&lt;/div&gt;&lt;/div&gt;
     
-&lt;&lt;if $maxKey == &quot;Разработчик&quot;&gt;&gt;
+&lt;&lt;if $maxKey == &quot;разработчиком&quot;&gt;&gt;
 	[[Приступить|Разработчик 1][$currentCharacter = &quot;Dev&quot;]]
- &lt;&lt;elseif $maxKey == &quot;Валидатор&quot;&gt;&gt;
+ &lt;&lt;elseif $maxKey == &quot;валидатором&quot;&gt;&gt;
  	[[Приступить|Валидатор 1][$currentCharacter = &quot;Val&quot;]]
- &lt;&lt;elseif $maxKey == &quot;Аналитик&quot;&gt;&gt;
+ &lt;&lt;elseif $maxKey == &quot;аналитиком&quot;&gt;&gt;
  	[[Приступить|Аналитик 1][$currentCharacter = &quot;Anal&quot;]]
- &lt;&lt;elseif $maxKey == &quot;Сервисный менеджер&quot;&gt;&gt;
+ &lt;&lt;elseif $maxKey == &quot;сервисным менеджером&quot;&gt;&gt;
  	[[Приступить|СМ 1][$currentCharacter = &quot;SM&quot;]]
 &lt;&lt;/if&gt;&gt;
 
