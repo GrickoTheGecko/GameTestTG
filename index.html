@@ -750,6 +750,7 @@ window.Get_anthveres = function(role){
 
 &lt;&lt;timed 1s&gt;&gt;
 &lt;&lt;script&gt;&gt;
+	console.log(State.getVar(&#39;$UserRole&#39;));
 	fetchLeaderboard(State.getVar(&#39;$UserRole&#39;), 10);
 &lt;&lt;/script&gt;&gt;
 &lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="20" name="Обработка" tags="" position="1000,1125" size="100,100">&lt;&lt;set $prof to {
@@ -922,29 +923,30 @@ window.Get_anthveres = function(role){
 	startTimer();
 &lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="42" name="Разработчик Финал" tags="" position="725,3300" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/Dev/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
-    &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Работа разработчика — это не просто писать код. Мы также разбираемся в потребностях клиентов. Иногда аналитик говорит: &quot;Сделай мне отчёт, чтобы видеть всё о расходах топлива&quot;. Но без чёткого запроса к базе данных работа с ней может превратиться в непростую задачу.&lt;&lt;/type&gt;&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Ты прошел тест с хорошим результатом. Поздравляю! Теперь тебе нужно немного больше практики, чтобы углубить свои знания в SQL и применении агрегатных функций. Если у тебя есть вопросы, не стесняйся задавать. Мы с радостью будем помогать тебе расти как специалисту. Так что добро пожаловать в команду, и удачи в следующем шаге на пути к мастерству!&lt;&lt;/type&gt;&gt;&lt;/div&gt;&lt;/div&gt;
     
-[[Закончить|Переход на лидерборд][$UserRole = &quot;DEV&quot;]]</tw-passagedata><tw-passagedata pid="43" name="Dev вопрос 1" tags="" position="900,2000" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Есть ли ошибка в запросе?
+[[Закончить|Переход на лидерборд][$UserRole = &quot;DEV&quot;]]</tw-passagedata><tw-passagedata pid="43" name="Dev вопрос 1" tags="" position="900,2000" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Есть ли ошибка в запросе:
 select id, date, customer_name from Orders where customer_name = Mike;
 
 
 [[Запрос составлен правильно|Dev вопрос 2][$Ansveres[&quot;Ansveres&quot;][&quot;1&quot;] to&quot;A&quot;]]
 [[Mike необходимо записать в кавычках &#39;Mike&#39;|Dev вопрос 2][$Ansveres[&quot;Ansveres&quot;][&quot;1&quot;] to&quot;B&quot;]]
 [[Нужно убрать лишние поля из запроса|Dev вопрос 2][$Ansveres[&quot;Ansveres&quot;][&quot;1&quot;] to&quot;C&quot;]]
-[[Строчку с where поменять местами с from|Dev вопрос 2][$Ansveres[&quot;Ansveres&quot;][&quot;1&quot;] to&quot;D&quot;]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="44" name="Dev вопрос 2" tags="" position="900,2125" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Какие данные мы получим из этого запроса?
+[[Строчку с where поменять местами с from|Dev вопрос 2][$Ansveres[&quot;Ansveres&quot;][&quot;1&quot;] to&quot;D&quot;]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="44" name="Dev вопрос 2" tags="" position="900,2125" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Какие данные мы получим из этого запроса:
 select id, date, customer_name from Orders;
 
 
 [[Неотсортированные номера и даты всех заказов с именами заказчиков|Dev вопрос 3][$Ansveres[&quot;Ansveres&quot;][&quot;2&quot;] to&quot;A&quot;]]
 [[Никакие, запрос составлен неверно|Dev вопрос 3][$Ansveres[&quot;Ansveres&quot;][&quot;2&quot;] to&quot;B&quot;]]
 [[Номера и даты всех заказов с именами заказчиков, отсортированные по первой колонке|Dev вопрос 3][$Ansveres[&quot;Ansveres&quot;][&quot;2&quot;] to&quot;C&quot;]]
-[[Номера и даты всех заказов с именами заказчиков, отсортированные по всем колонкам, содержащим слово Order|Dev вопрос 3][$Ansveres[&quot;Ansveres&quot;][&quot;2&quot;] to&quot;D&quot;]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="45" name="Dev вопрос 3" tags="" position="900,2250" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Что покажет следующий запрос: select DISTINCT seller_id order by seller_id from Orders;
+[[Номера и даты всех заказов с именами заказчиков, отсортированные по всем колонкам, содержащим слово Order|Dev вопрос 3][$Ansveres[&quot;Ansveres&quot;][&quot;2&quot;] to&quot;D&quot;]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="45" name="Dev вопрос 3" tags="" position="900,2250" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Что покажет следующий запрос:
+select DISTINCT seller_id order by seller_id from Orders;
     
 
 [[Уникальные ID продавцов, отсортированные по возрастанию|Dev вопрос 4][$Ansveres[&quot;Ansveres&quot;][&quot;3&quot;] to&quot;A&quot;]]
 [[Уникальные ID продавцов, отсортированные по убыванию|Dev вопрос 4][$Ansveres[&quot;Ansveres&quot;][&quot;3&quot;] to&quot;B&quot;]]
 [[Ничего, запрос составлен неверно, ORDER BY всегда ставится в конце запроса|Dev вопрос 4][$Ansveres[&quot;Ansveres&quot;][&quot;3&quot;] to&quot;C&quot;]]
-[[Неотсортированные никак уникальные ID продавцов|Dev вопрос 4][$Ansveres[&quot;Ansveres&quot;][&quot;3&quot;] to&quot;D&quot;]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="46" name="Dev вопрос 4" tags="" position="900,2375" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Что возвращает следующий запрос?
+[[Неотсортированные никак уникальные ID продавцов|Dev вопрос 4][$Ansveres[&quot;Ansveres&quot;][&quot;3&quot;] to&quot;D&quot;]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="46" name="Dev вопрос 4" tags="" position="900,2375" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Что возвращает следующий запрос:
 SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
     
 
