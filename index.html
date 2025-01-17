@@ -433,6 +433,46 @@ $(document).on(':typingcomplete', function (ev) {
     });
 }());
 
+window.cacheVal = function(){
+    var sources = [
+      "Assets/Val/Задания/1/1.jpg",
+      "Assets/Val/Задания/1/2.jpg",
+      "Assets/Val/Задания/1/3.jpg",
+      "Assets/Val/Задания/1/4.jpg",
+      "Assets/Val/Задания/2/1.jpg",
+      "Assets/Val/Задания/2/2.jpg",
+      "Assets/Val/Задания/3/1.png",
+      "Assets/Val/Задания/3/2.png",
+      "Assets/Val/Задания/3/3.png",
+      "Assets/Val/Задания/3/4.png",
+      "Assets/Val/Задания/4/1.png",
+      "Assets/Val/Задания/4/2.png",
+      "Assets/Val/Задания/4/3.png",
+      "Assets/Val/Задания/4/4.png",
+      "Assets/Val/Задания/5/1.png",
+      "Assets/Val/Задания/5/2.png",
+      "Assets/Val/Задания/5/3.png",
+      "Assets/Val/Задания/5/4.png",
+      "Assets/Val/Задания/6/1.png",
+      "Assets/Val/Задания/6/2.png",
+      "Assets/Val/Задания/6/3.png",
+      "Assets/Val/Задания/6/4.png",
+      "Assets/Val/Задания/7/1.png",
+      "Assets/Val/Задания/7/2.png",
+      "Assets/Val/Задания/8/1.png",
+      "Assets/Val/Задания/8/2.png",
+      "Assets/Val/Задания/8/3.png",
+      "Assets/Val/Задания/8/4.png",
+    ],
+        imgCache = window.TwineImgCache = {};
+    sources.forEach(function (src) {
+        if (!imgCache.hasOwnProperty(src)) {
+            imgCache[src] = document.createElement("img");
+            imgCache[src].src = src;
+        }
+    });
+}
+
 const passageBackgrounds = {
   "Entry Point":	"Assets/HR/BG.jpg",
   "Лидерборд":		"Assets/HR/BG.jpg",
@@ -1045,7 +1085,7 @@ $(document).on("twine:passagedisplay", function () {
 	startTimer();
 &lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="42" name="Разработчик Финал" tags="" position="725,3300" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/Dev/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
-    &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Ты прошел тест с хорошим результатом. Поздравляю!Если у тебя есть вопросы, не стесняйся задавать. Мы с радостью будем помогать тебе расти как специалисту. Так что добро пожаловать в команду, и удачи в следующем шаге на пути к мастерству!&lt;&lt;/type&gt;&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Ты прошел тест с хорошим результатом. Поздравляю! Если у тебя есть вопросы, не стесняйся задавать. Мы с радостью будем помогать тебе расти как специалисту. Так что добро пожаловать в команду, и удачи в следующем шаге на пути к мастерству!&lt;&lt;/type&gt;&gt;&lt;/div&gt;&lt;/div&gt;
     
 [[Закончить|Переход на лидерборд][$UserRole = &quot;DEV&quot;]]</tw-passagedata><tw-passagedata pid="43" name="Dev вопрос 1" tags="" position="900,2000" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Есть ли ошибка в запросе:
 select id, date, customer_name from Orders where customer_name = Mike;
@@ -1149,6 +1189,7 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 
 &lt;&lt;script&gt;&gt;
 	startTimer();
+    cacheVal();
 &lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="58" name="Val вопрос 1" tags="" position="1100,2000" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Проанализируйте данные о транспортном средстве и примите решение:
 
 &lt;div id=&quot;image-slider&quot;&gt;&lt;div class=&quot;slider-wrapper&quot;&gt;
@@ -1310,9 +1351,9 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 
 &lt;script&gt;
 	initializeSlider();
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="68" name="Валидатор Финал" tags="" position="1100,3125" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="68" name="Валидатор Финал" tags="" position="1100,3300" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/Val/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
-    &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Ты прошел тест с хорошим результатом. Поздравляю!Если у тебя есть вопросы, не стесняйся задавать. Мы с радостью будем помогать тебе расти как специалисту. Так что добро пожаловать в команду, и удачи в следующем шаге на пути к мастерству!&lt;&lt;/type&gt;&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Ты прошел тест с хорошим результатом. Поздравляю! Если у тебя есть вопросы, не стесняйся задавать. Мы с радостью будем помогать тебе расти как специалисту. Так что добро пожаловать в команду, и удачи в следующем шаге на пути к мастерству!&lt;&lt;/type&gt;&gt;&lt;/div&gt;&lt;/div&gt;
     
 [[Закончить|Переход на лидерборд][$UserRole = &quot;VALIDATOR&quot;]]</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
