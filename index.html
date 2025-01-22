@@ -1361,11 +1361,12 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
         &lt;img class=&quot;slider-image&quot; src=&quot;Assets\Val\Обучение\1.png&quot; alt=&quot;Image 1&quot;&gt;
         &lt;img class=&quot;slider-image&quot; src=&quot;Assets\Val\Обучение\2.png&quot; alt=&quot;Image 1&quot;&gt;
         &lt;img class=&quot;slider-image&quot; src=&quot;Assets\Val\Обучение\3.png&quot; alt=&quot;Image 1&quot;&gt;
+        &lt;img class=&quot;slider-image&quot; src=&quot;Assets\Val\Обучение\5.png&quot; alt=&quot;Image 1&quot;&gt;
 &lt;/div&gt;&lt;/div&gt;
 &lt;div class=&quot;slider-controls&quot;&gt;&lt;button id=&quot;prev-btn&quot; class=&quot;slider-arrow&quot; disabled&gt;&amp;larr; Назад&lt;/button&gt;
 &lt;button id=&quot;next-btn&quot; class=&quot;slider-arrow&quot;&gt;Вперёд &amp;rarr;&lt;/button&gt;&lt;/div&gt;
 
-&lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Итак, давай начнём с основ. Здесь у нас три главных инструмента для анализа: карта, график скорости и график уровня топлива. Каждый из них рассказывает свою историю о том, что происходит с транспортным средством. Твоя задача — найти в этих историях аномалии и понять, что они означают.&lt;&lt;/type&gt;&gt;
+&lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Итак, давай начнём с основ. Здесь у нас четыре главных инструмента для анализа: карта (трек ТС), график скорости, график уровня топлива и журнал заправок и сливов. Каждый из них рассказывает свою историю о том, что происходит с транспортным средством. Твоя задача — найти в этих историях аномалии и понять, что они означают.&lt;&lt;/type&gt;&gt;
 [[Далее|Валидатор Обучение 2]]&lt;/div&gt;&lt;/div&gt;
 
 &lt;script&gt;
@@ -1373,7 +1374,7 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="70" name="Валидатор Обучение 2" tags="" position="1400,2025" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;image-slider&quot;&gt;&lt;div class=&quot;slider-wrapper&quot;&gt;
         &lt;img class=&quot;slider-image&quot; src=&quot;Assets\Val\Обучение\1.png&quot; alt=&quot;Image 1&quot;&gt;
 &lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Смотри, это наша первая подсказка. Здесь видно, что ТС буквально &quot;летает&quot; с одного места на другое. Это явная неисправность оборудования — чаще всего проблема в GPS-датчике. Он теряет связь со спутником и возвращает неверные координаты.&lt;&lt;/type&gt;&gt;
+&lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Смотри, это наша первая подсказка. Здесь видно, что ТС буквально &quot;летает&quot; с одного места на другое. Это явная неисправность оборудования — чаще всего проблема в GPS-модуле терминала. Он теряет связь со спутником и возвращает неверные координаты.&lt;&lt;/type&gt;&gt;
 [[Далее|Валидатор Обучение 3]]&lt;/div&gt;&lt;/div&gt;
 </tw-passagedata><tw-passagedata pid="71" name="Валидатор Обучение 3" tags="" position="1400,2150" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;image-slider&quot;&gt;&lt;div class=&quot;slider-wrapper&quot;&gt;
         &lt;img class=&quot;slider-image&quot; src=&quot;Assets\Val\Обучение\2.png&quot; alt=&quot;Image 1&quot;&gt;
@@ -1387,20 +1388,27 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 &lt;div class=&quot;slider-controls&quot;&gt;&lt;button id=&quot;prev-btn&quot; class=&quot;slider-arrow&quot; disabled&gt;&amp;larr; Назад&lt;/button&gt;
 &lt;button id=&quot;next-btn&quot; class=&quot;slider-arrow&quot;&gt;Вперёд &amp;rarr;&lt;/button&gt;&lt;/div&gt;
 
-&lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Чтобы понять, что именно произошло, нужно проверить карту. Если карта выглядит нормально, значит, водитель действительно нарушил скоростной режим. Если же карта &quot;скачет&quot;, как в нашем случае, вероятно, проблема в GPS.&lt;&lt;/type&gt;&gt;
+&lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Чтобы понять, что именно произошло, нужно проверить трек ТС. Если трек отрисован на карте корректно, значит, водитель действительно нарушил скоростной режим. Если же трек &quot;скачет&quot;, как в нашем случае, вероятно, проблема в GPS. Такие случаи мы расцениваем как неисправность с оборудованием&lt;&lt;/type&gt;&gt;
 [[Далее|Валидатор Обучение 5]]&lt;/div&gt;&lt;/div&gt;
 
 &lt;script&gt;
 	initializeSlider();
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="73" name="Валидатор Обучение 5" tags="" position="1400,2400" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;image-slider&quot;&gt;&lt;div class=&quot;slider-wrapper&quot;&gt;
         &lt;img class=&quot;slider-image&quot; src=&quot;Assets\Val\Обучение\3.png&quot; alt=&quot;Image 1&quot;&gt;
+        &lt;img class=&quot;slider-image&quot; src=&quot;Assets\Val\Обучение\5.png&quot; alt=&quot;Image 1&quot;&gt;
 &lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Вот это выглядит подозрительно. Уровень топлива внезапно упал, хотя ТС было заглушено. Если через какое-то время он не вернулся в норму, скорее всего, это слив топлива. В таком случае мы добавляем это событие в отчёт для клиента. Это важно для контроля за расходами и предотвращения хищений.&lt;&lt;/type&gt;&gt;
+&lt;div class=&quot;slider-controls&quot;&gt;&lt;button id=&quot;prev-btn&quot; class=&quot;slider-arrow&quot; disabled&gt;&amp;larr; Назад&lt;/button&gt;
+&lt;button id=&quot;next-btn&quot; class=&quot;slider-arrow&quot;&gt;Вперёд &amp;rarr;&lt;/button&gt;&lt;/div&gt;
+
+&lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Вот это выглядит подозрительно. Уровень топлива внезапно упал. Если через какое-то время он не вернулся в норму, скорее всего, это слив действительно слив топлива, а не ошибка системы. В таком случае мы добавляем это событие в отчёт для клиента. Это важно для контроля за расходами и предотвращения хищений.&lt;&lt;/type&gt;&gt;
 [[Далее|Валидатор Обучение 6]]&lt;/div&gt;&lt;/div&gt;
-</tw-passagedata><tw-passagedata pid="74" name="sex" tags="" position="125,1175" size="100,100"></tw-passagedata><tw-passagedata pid="75" name="Валидатор Обучение 6" tags="" position="1400,2525" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;image-slider&quot;&gt;&lt;div class=&quot;slider-wrapper&quot;&gt;
+
+&lt;script&gt;
+	initializeSlider();
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="74" name="sex" tags="" position="125,1175" size="100,100"></tw-passagedata><tw-passagedata pid="75" name="Валидатор Обучение 6" tags="" position="1400,2525" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;image-slider&quot;&gt;&lt;div class=&quot;slider-wrapper&quot;&gt;
         &lt;img class=&quot;slider-image&quot; src=&quot;Assets\Val\Обучение\4.png&quot; alt=&quot;Image 1&quot;&gt;
 &lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Теперь этот график. Уровень топлива скачет вверх и вниз. Это может означать, что ТС едет по неровной местности. Но если колебания слишком сильные или выходят за пределы нормы, значит, что датчик неисправен.&lt;&lt;/type&gt;&gt;
+&lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Теперь этот график. Уровень топлива скачет вверх и вниз. Это может означать, что ТС едет по неровной местности. Но если колебания слишком сильные или выходят за пределы нормы, значит, что датчик неисправен, либо требуется повторная калибровка, либо в топливном баке мусор&lt;&lt;/type&gt;&gt;
 [[Далее|Валидатор 5]]&lt;/div&gt;&lt;/div&gt;
 </tw-passagedata><tw-passagedata pid="76" name="Anal вопрос 2" tags="" position="700,2250" size="100,100">&lt;div class=&quot;text-box&quot;&gt;О чем свидетельствуют данные показатели эффективности
 
