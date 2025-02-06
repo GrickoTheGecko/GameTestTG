@@ -104,7 +104,7 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="Montrans игра" startnode="15" creator="Twine" creator-version="2.10.0" format="SugarCube" format-version="2.37.3" ifid="A71F3F64-DB0B-40ED-B147-A1D22D486B68" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+	<tw-storydata name="Montrans игра" startnode="15" creator="Twine" creator-version="2.10.0" format="SugarCube" format-version="2.37.3" ifid="A71F3F64-DB0B-40ED-B147-A1D22D486B68" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
 
 
 .passage {
@@ -860,28 +860,11 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
     SetStatus();
 &lt;&lt;/script&gt;&gt;
 
-/*&lt;&lt;if $UserStatus == &quot;locked&quot;&gt;&gt;
+&lt;&lt;if $UserStatus == &quot;locked&quot;&gt;&gt;
 	&lt;&lt;goto  [[Лидерборд]] &gt;&gt;
  &lt;&lt;else&gt;&gt;
 	&lt;&lt;goto  [[Вступление]] &gt;&gt;
-&lt;&lt;/if&gt;&gt;*/
-
-[[Вступление]] 
-[[Результаты]] 
-[[Лидерборд]]</tw-passagedata><tw-passagedata pid="16" name="SEX" tags="" position="225,750" size="100,100">&lt;!-- Слайдер --&gt;
-&lt;div id=&quot;image-slider&quot;&gt;
-    &lt;div class=&quot;slider-wrapper&quot;&gt;
-        &lt;img class=&quot;slider-image&quot; src=&quot;image1.jpg&quot; alt=&quot;Image 1&quot;&gt;
-        &lt;img class=&quot;slider-image&quot; src=&quot;image2.jpg&quot; alt=&quot;Image 2&quot;&gt;
-        &lt;img class=&quot;slider-image&quot; src=&quot;image3.jpg&quot; alt=&quot;Image 3&quot;&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;!-- Кнопки управления --&gt;
-&lt;div class=&quot;slider-controls&quot;&gt;
-    &lt;button id=&quot;prev-btn&quot; class=&quot;slider-arrow&quot; disabled&gt;&amp;larr; Назад&lt;/button&gt;
-    &lt;button id=&quot;next-btn&quot; class=&quot;slider-arrow&quot;&gt;Вперёд &amp;rarr;&lt;/button&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="17" name="Val вопрос 1" tags="" position="1100,2000" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Проанализируйте данные о транспортном средстве и примите решение:
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="Val вопрос 1" tags="" position="1100,2000" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Проанализируйте данные о транспортном средстве и примите решение:
 
 &lt;div id=&quot;image-slider&quot;&gt;&lt;div class=&quot;slider-wrapper&quot;&gt;
         &lt;img class=&quot;slider-image&quot; src=&quot;Assets\Val\Задания\1\1.jpg&quot; alt=&quot;Image 1&quot;&gt;
@@ -899,7 +882,7 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 
 &lt;script&gt;
 	initializeSlider();
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="18" name="Val вопрос 2" tags="" position="1100,2125" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Проанализируйте данные о транспортном средстве и примите решение:
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="17" name="Val вопрос 2" tags="" position="1100,2125" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Проанализируйте данные о транспортном средстве и примите решение:
 
 &lt;div id=&quot;image-slider&quot;&gt;&lt;div class=&quot;slider-wrapper&quot;&gt;
         &lt;img class=&quot;slider-image&quot; src=&quot;Assets\Val\Задания\2\1.jpg&quot; alt=&quot;Image 1&quot;&gt;
@@ -915,7 +898,7 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 
 &lt;script&gt;
 	initializeSlider();
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="19" name="Val вопрос 3" tags="" position="1100,2250" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Проанализируйте данные о транспортном средстве и примите решение:
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="18" name="Val вопрос 3" tags="" position="1100,2250" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Проанализируйте данные о транспортном средстве и примите решение:
 
 &lt;div id=&quot;image-slider&quot;&gt;&lt;div class=&quot;slider-wrapper&quot;&gt;
         &lt;img class=&quot;slider-image&quot; src=&quot;Assets\Val\Задания\3\1.png&quot; alt=&quot;Image 1&quot;&gt;
@@ -933,7 +916,7 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 
 &lt;script&gt;
 	initializeSlider();
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="20" name="Val вопрос 4" tags="" position="1100,2375" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Проанализируйте данные о транспортном средстве и примите решение:
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="19" name="Val вопрос 4" tags="" position="1100,2375" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Проанализируйте данные о транспортном средстве и примите решение:
 
 &lt;div id=&quot;image-slider&quot;&gt;&lt;div class=&quot;slider-wrapper&quot;&gt;
         &lt;img class=&quot;slider-image&quot; src=&quot;Assets\Val\Задания\4\1.png&quot; alt=&quot;Image 1&quot;&gt;
@@ -951,7 +934,7 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 
 &lt;script&gt;
 	initializeSlider();
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="21" name="Val вопрос 5" tags="" position="1100,2500" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Проанализируйте данные о транспортном средстве и примите решение:
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="20" name="Val вопрос 5" tags="" position="1100,2500" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Проанализируйте данные о транспортном средстве и примите решение:
 
 &lt;div id=&quot;image-slider&quot;&gt;&lt;div class=&quot;slider-wrapper&quot;&gt;
         &lt;img class=&quot;slider-image&quot; src=&quot;Assets\Val\Задания\5\1.png&quot; alt=&quot;Image 1&quot;&gt;
@@ -969,7 +952,7 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 
 &lt;script&gt;
 	initializeSlider();
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="22" name="Val вопрос 6" tags="" position="1100,2625" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Проанализируйте данные о транспортном средстве и примите решение:
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="21" name="Val вопрос 6" tags="" position="1100,2625" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Проанализируйте данные о транспортном средстве и примите решение:
 
 &lt;div id=&quot;image-slider&quot;&gt;&lt;div class=&quot;slider-wrapper&quot;&gt;
         &lt;img class=&quot;slider-image&quot; src=&quot;Assets\Val\Задания\6\1.png&quot; alt=&quot;Image 1&quot;&gt;
@@ -987,7 +970,7 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 
 &lt;script&gt;
 	initializeSlider();
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="23" name="Val вопрос 7" tags="" position="1100,2750" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Проанализируйте данные о транспортном средстве и примите решение:
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="22" name="Val вопрос 7" tags="" position="1100,2750" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Проанализируйте данные о транспортном средстве и примите решение:
 
 &lt;div id=&quot;image-slider&quot;&gt;&lt;div class=&quot;slider-wrapper&quot;&gt;
         &lt;img class=&quot;slider-image&quot; src=&quot;Assets\Val\Задания\7\1.png&quot; alt=&quot;Image 1&quot;&gt;
@@ -1003,7 +986,7 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 
 &lt;script&gt;
 	initializeSlider();
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="24" name="Val вопрос 8" tags="" position="1100,2875" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Проанализируйте данные о транспортном средстве и примите решение:
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="23" name="Val вопрос 8" tags="" position="1100,2875" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Проанализируйте данные о транспортном средстве и примите решение:
 
 &lt;div id=&quot;image-slider&quot;&gt;&lt;div class=&quot;slider-wrapper&quot;&gt;
         &lt;img class=&quot;slider-image&quot; src=&quot;Assets\Val\Задания\8\1.png&quot; alt=&quot;Image 1&quot;&gt;
@@ -1021,22 +1004,22 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 
 &lt;script&gt;
 	initializeSlider();
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="25" name="sex" tags="" position="125,1175" size="100,100"></tw-passagedata><tw-passagedata pid="26" name="Аналитик 1" tags="" position="700,1375" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="24" name="Аналитик 1" tags="" position="700,1375" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/Anal/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Привет! Рад встрече. Меня зовут Андрей, я аналитик данных. Ну что, готовы узнать, как из хаоса цифр и таблиц мы создаём то, что помогает бизнесу принимать решения?&lt;&lt;/type&gt;&gt;&lt;/div&gt;&lt;/div&gt; 
-[[Далее|Аналитик 2]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="27" name="Аналитик 2" tags="" position="700,1500" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+[[Далее|Аналитик 2]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="25" name="Аналитик 2" tags="" position="700,1500" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite&quot; src=&quot;Assets/Anal/ЭТАН декабрь.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Смотрите, это один из наших инструментов аналитики. Здесь собраны данные по работе транспорта у клиента. Например, сколько машин на линии, сколько простаивают, сколько находятся в ремонте. Это не просто графики — это информация, которая помогает руководителям компаний видеть реальное положение дел и действовать быстрее.&lt;&lt;/type&gt;&gt;&lt;/div&gt;&lt;/div&gt;
-[[Далее|Аналитик 3]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="28" name="Аналитик 3" tags="" position="700,1625" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+[[Далее|Аналитик 3]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="26" name="Аналитик 3" tags="" position="700,1625" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/Anal/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Но наша работа не только в том, чтобы создавать такие дашборды. Вот, например, ситуация: клиенту нужно проанализировать, почему в последние два месяца у их транспорта увеличился расход топлива. Чтобы помочь, мы собираем данные из разных источников — тахографов, GPS-трекеров, журналов водителей. Потом чистим их, соединяем и визуализируем.&lt;&lt;/type&gt;&gt;&lt;/div&gt;&lt;/div&gt;
-[[Далее|Аналитик 4]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="29" name="Аналитик 4" tags="" position="700,1750" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+[[Далее|Аналитик 4]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="27" name="Аналитик 4" tags="" position="700,1750" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/Anal/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Ещё одна важная часть нашей работы — обучение клиентов. Иногда мы проводим обучение, показывая, как пользоваться аналитическими системами, чтобы они могли сами находить ответы на свои вопросы.&lt;&lt;/type&gt;&gt;&lt;/div&gt;&lt;/div&gt;
-[[Далее|Аналитик 5]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="30" name="Аналитик 5" tags="" position="700,1875" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+[[Далее|Аналитик 5]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="28" name="Аналитик 5" tags="" position="700,1875" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/Anal/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Работа аналитика — это, по сути, работа мостом. Мы объединяем технические данные и реальные задачи бизнеса. Это требует внимания к деталям, понимания, как устроены процессы у клиентов, и умения структурировать большой объём информации.&lt;&lt;/type&gt;&gt;&lt;/div&gt;&lt;/div&gt;
-[[Далее|Аналитик 6]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="31" name="Аналитик 6" tags="" position="700,2000" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+[[Далее|Аналитик 6]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="29" name="Аналитик 6" tags="" position="700,2000" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/Anal/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Чтобы вы лучше поняли, с чем мы работаем, у меня есть небольшая задача. Вы увидите реальные данные, которые нужно проанализировать. Готовы попробовать себя в роли аналитика?&lt;&lt;/type&gt;&gt;&lt;/div&gt;&lt;/div&gt;
 [[Готов!|Anal вопрос 1]]&lt;/div&gt;
@@ -1060,46 +1043,23 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 
 &lt;&lt;script&gt;&gt;
 	startTimer();
-&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="32" name="Безымянный параграф" tags="" position="125,1050" size="100,100">&lt;&lt;type 50ms&gt;&gt;&lt;&lt;linkreplace &quot;You&#39;ll //never// take me alive!&quot;&gt;&gt;&lt;&lt;type 50ms&gt;&gt;On second thought, don&#39;t hurt me.&lt;&lt;/type&gt;&gt;[[sex]]&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/type&gt;&gt;
-
-&lt;div id=&quot;sex&quot;&gt;asdffdf&lt;/div&gt;
-
-&lt;&lt;type 50ms&gt;&gt;
-&lt;&lt;link &quot;Have the same&quot;&gt;&gt;
-&lt;&lt;replace &quot;#sex&quot;&gt;&gt;&lt;&lt;type 50ms&gt;&gt;On second thought, don&#39;t hurt me.&lt;&lt;/type&gt;&gt;[[sex]]&lt;&lt;/replace&gt;&gt;
-&lt;&lt;/link&gt;&gt;
-&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="33" name="Безымянный параграф 1" tags="" position="450,925" size="100,100">&lt;&lt;set $sprites to {
-    &quot;Alice&quot;: {
-        &quot;idle&quot;: &quot;https://cdn.culture.ru/images/cc492544-0f86-5884-895b-18e1e37f6b8b/c_fill,g_center/01-png.webp&quot;,
-        &quot;talking&quot;: &quot;https://cdn.culture.ru/images/b1735ab8-e460-5115-b3a9-2266ed6707a6/c_fill,g_center/02-png.webp&quot;
-    },
-}&gt;&gt;
-
-
-&lt;div id=&quot;sprite-container&quot;&gt;
-    &lt;img id=&quot;sprite-image&quot; src=&quot;&quot;&gt;
-&lt;/div&gt;
-
-&lt;&lt;set $currentCharacter = &quot;Alice&quot;&gt;&gt;
-&lt;&lt;type 50ms&gt;&gt;
-    Привет! Меня зовут Алиса. Я рада тебя видеть.
-&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="34" name="Безымянный параграф 2" tags="" position="1325,1000" size="100,100"></tw-passagedata><tw-passagedata pid="35" name="Валидатор 1" tags="" position="1100,1375" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="30" name="Валидатор 1" tags="" position="1100,1375" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/Val/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Привет! Рад тебя видеть. Меня зовут Ольга, и я валидатор. Наша работа, хоть и не так заметна, как у аналитиков или разработчиков, но невероятно важна для всей системы.&lt;&lt;/type&gt;&gt;&lt;/div&gt;&lt;/div&gt;
 
-[[Далее|Валидатор 2]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="36" name="Валидатор 2" tags="" position="1100,1500" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+[[Далее|Валидатор 2]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="31" name="Валидатор 2" tags="" position="1100,1500" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/Val/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Мы здесь занимаемся тем, что проверяем и чистим данные. Представь, что твой автомобиль на карте вдруг &quot;вылетает&quot; с одной точки на другую — это может быть ложное событие, и наша задача найти такие ошибки, устранить их и сделать данные максимально точными.&lt;&lt;/type&gt;&gt;&lt;/div&gt;&lt;/div&gt;
 
-[[Далее|Валидатор 3]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="37" name="Валидатор 3" tags="" position="1100,1625" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+[[Далее|Валидатор 3]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="32" name="Валидатор 3" tags="" position="1100,1625" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/Val/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Кроме очистки данных, мы создаём отчёты для клиентов. Например, один из клиентов недавно попросил нас проверить превышения скорости за месяц. Когда мы изучили события, оказалось, что половина из них была ложной из-за неправильной настройки датчиков. После нашей проверки и корректировки данных клиент получил точный отчёт и смог улучшить свои процессы.&lt;&lt;/type&gt;&gt;&lt;/div&gt;&lt;/div&gt;
 
-[[Далее|Валидатор 4]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="38" name="Валидатор 4" tags="" position="1100,1750" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+[[Далее|Валидатор 4]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="33" name="Валидатор 4" tags="" position="1100,1750" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/Val/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Здесь важно быть внимательным к деталям, понимать, как работают датчики, и уметь замечать закономерности в данных. Иногда проблема кроется не в данных, а в оборудовании или настройках, и тогда мы работаем вместе с Сервисным менеджером, чтобы исправить ситуацию.&lt;&lt;/type&gt;&gt;&lt;/div&gt;&lt;/div&gt;
 
-[[Далее|Валидатор Обучение 1]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="39" name="Валидатор 5" tags="" position="1100,1875" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+[[Далее|Валидатор Обучение 1]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="34" name="Валидатор 5" tags="" position="1100,1875" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/Val/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Теперь когда у тебя еть базовые знания, хочешь попробовать себя в нашей роли? Я подготовила для тебя небольшой тест. Твоя задача — найти ошибки в данных и правильно их обработать. Это не так сложно, как кажется, но требует немного внимания. Готов?&lt;&lt;/type&gt;&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -1123,7 +1083,7 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 &lt;&lt;script&gt;&gt;
 	startTimer();
     cacheVal();
-&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="40" name="Валидатор Обучение 1" tags="" position="1400,1900" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;image-slider&quot;&gt;&lt;div class=&quot;slider-wrapper&quot;&gt;
+&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="35" name="Валидатор Обучение 1" tags="" position="1400,1900" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;image-slider&quot;&gt;&lt;div class=&quot;slider-wrapper&quot;&gt;
         &lt;img class=&quot;slider-image&quot; src=&quot;Assets\Val\Обучение\1.png&quot; alt=&quot;Image 1&quot;&gt;
         &lt;img class=&quot;slider-image&quot; src=&quot;Assets\Val\Обучение\2.png&quot; alt=&quot;Image 1&quot;&gt;
         &lt;img class=&quot;slider-image&quot; src=&quot;Assets\Val\Обучение\3.png&quot; alt=&quot;Image 1&quot;&gt;
@@ -1137,15 +1097,15 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 
 &lt;script&gt;
 	initializeSlider();
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="41" name="Валидатор Обучение 2" tags="" position="1400,2025" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;image-slider&quot;&gt;&lt;div class=&quot;slider-wrapper&quot;&gt;
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="36" name="Валидатор Обучение 2" tags="" position="1400,2025" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;image-slider&quot;&gt;&lt;div class=&quot;slider-wrapper&quot;&gt;
         &lt;img class=&quot;slider-image&quot; src=&quot;Assets\Val\Обучение\1.png&quot; alt=&quot;Image 1&quot;&gt;
 &lt;/div&gt;&lt;/div&gt;
 &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Смотри, это наша первая подсказка. Здесь видно, что ТС буквально &quot;летает&quot; с одного места на другое. Это явная неисправность оборудования — чаще всего проблема в GPS-модуле терминала. Он теряет связь со спутником и возвращает неверные координаты.&lt;&lt;/type&gt;&gt;
-[[Далее|Валидатор Обучение 3]]&lt;/div&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="42" name="Валидатор Обучение 3" tags="" position="1400,2150" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;image-slider&quot;&gt;&lt;div class=&quot;slider-wrapper&quot;&gt;
+[[Далее|Валидатор Обучение 3]]&lt;/div&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="37" name="Валидатор Обучение 3" tags="" position="1400,2150" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;image-slider&quot;&gt;&lt;div class=&quot;slider-wrapper&quot;&gt;
         &lt;img class=&quot;slider-image&quot; src=&quot;Assets\Val\Обучение\2.png&quot; alt=&quot;Image 1&quot;&gt;
 &lt;/div&gt;&lt;/div&gt;
 &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Теперь взгляни на скорость. Здесь видно, что ТС превышает установленный лимит. Это может быть либо ошибка оборудования, либо нарушение водителя.&lt;&lt;/type&gt;&gt;
-[[Далее|Валидатор Обучение 4]]&lt;/div&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="43" name="Валидатор Обучение 4" tags="" position="1400,2275" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;image-slider&quot;&gt;&lt;div class=&quot;slider-wrapper&quot;&gt;
+[[Далее|Валидатор Обучение 4]]&lt;/div&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="38" name="Валидатор Обучение 4" tags="" position="1400,2275" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;image-slider&quot;&gt;&lt;div class=&quot;slider-wrapper&quot;&gt;
         &lt;img class=&quot;slider-image&quot; src=&quot;Assets\Val\Обучение\1.png&quot; alt=&quot;Image 1&quot;&gt;
         &lt;img class=&quot;slider-image&quot; src=&quot;Assets\Val\Обучение\2.png&quot; alt=&quot;Image 1&quot;&gt;
 &lt;/div&gt;&lt;/div&gt;
@@ -1157,7 +1117,7 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 
 &lt;script&gt;
 	initializeSlider();
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="44" name="Валидатор Обучение 5" tags="" position="1400,2400" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;image-slider&quot;&gt;&lt;div class=&quot;slider-wrapper&quot;&gt;
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="39" name="Валидатор Обучение 5" tags="" position="1400,2400" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;image-slider&quot;&gt;&lt;div class=&quot;slider-wrapper&quot;&gt;
         &lt;img class=&quot;slider-image&quot; src=&quot;Assets\Val\Обучение\3.png&quot; alt=&quot;Image 1&quot;&gt;
         &lt;img class=&quot;slider-image&quot; src=&quot;Assets\Val\Обучение\5.png&quot; alt=&quot;Image 1&quot;&gt;
 &lt;/div&gt;&lt;/div&gt;
@@ -1169,58 +1129,58 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 
 &lt;script&gt;
 	initializeSlider();
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="45" name="Валидатор Обучение 6" tags="" position="1400,2525" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;image-slider&quot;&gt;&lt;div class=&quot;slider-wrapper&quot;&gt;
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="40" name="Валидатор Обучение 6" tags="" position="1400,2525" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;image-slider&quot;&gt;&lt;div class=&quot;slider-wrapper&quot;&gt;
         &lt;img class=&quot;slider-image&quot; src=&quot;Assets\Val\Обучение\4.png&quot; alt=&quot;Image 1&quot;&gt;
 &lt;/div&gt;&lt;/div&gt;
 &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Теперь этот график. Уровень топлива скачет вверх и вниз. Это может означать, что ТС едет по неровной местности. Но если колебания слишком сильные или выходят за пределы нормы, значит, что датчик неисправен, либо требуется повторная калибровка, либо в топливном баке мусор&lt;&lt;/type&gt;&gt;
-[[Далее|Валидатор 5]]&lt;/div&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="46" name="Валидатор Финал" tags="" position="1100,3600" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+[[Далее|Валидатор 5]]&lt;/div&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="41" name="Валидатор Финал" tags="" position="1100,3600" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/Val/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Ты прошел тест с хорошим результатом. Поздравляю! Если у тебя есть вопросы, не стесняйся задавать. Мы с радостью будем помогать тебе расти как специалисту. Так что добро пожаловать в команду, и удачи в следующем шаге на пути к мастерству!&lt;&lt;/type&gt;&gt;&lt;/div&gt;&lt;/div&gt;
     
-[[Закончить|Переход на лидерборд][$UserRole = &quot;VALIDATOR&quot;]]</tw-passagedata><tw-passagedata pid="47" name="Вопрос 1" tags="" position="800,500" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;&lt;set $text=&quot;Что вам нравится больше в работе?&quot;&gt;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+[[Закончить|Переход на лидерборд][$UserRole = &quot;VALIDATOR&quot;]]</tw-passagedata><tw-passagedata pid="42" name="Вопрос 1" tags="" position="800,500" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;&lt;set $text=&quot;Что вам нравится больше в работе?&quot;&gt;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/HR/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;$text&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;&lt;timed `(($text.length * 0.08)) + &quot;s&quot;`&gt;&gt;[[Разрабатывать решения и визуализации для автоматизации работы с данными|Вопрос 2][$Dev += 1]]
 [[Создавать аналитические отчеты, визуализировать данные и помогать клиентам в их интерпретации|Вопрос 2][$Anal += 1]]
 [[Взаимодействовать с клиентами, организовывать работу и обеспечивать поддержку|Вопрос 2][$SM += 1]]
-[[Выявлять ошибки, проверять данные и исправлять неточности|Вопрос 2][$Val += 1]]&lt;&lt;/timed&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="48" name="Вопрос 2" tags="" position="800,625" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;&lt;set $text=&quot;Какой из сценариев вам кажется наиболее интересным?&quot;&gt;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+[[Выявлять ошибки, проверять данные и исправлять неточности|Вопрос 2][$Val += 1]]&lt;&lt;/timed&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="43" name="Вопрос 2" tags="" position="800,625" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;&lt;set $text=&quot;Какой из сценариев вам кажется наиболее интересным?&quot;&gt;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/HR/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;$text&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;&lt;timed `(($text.length * 0.08)) + &quot;s&quot;`&gt;&gt;[[Проверить блок событий и очистить ложные данные, влияющие на точность отчетов|Вопрос 3][$Val += 1]]
 [[Разработать дашборд для анализа данных и улучшить его интерфейс|Вопрос 3][$Dev += 1]]
 [[Организовать выезд инженера для настройки оборудования клиента и решить проблему|Вопрос 3][$SM += 1]]
-[[Подготовить аналитику по запросу клиента и согласовать доработки|Вопрос 3][$Anal += 1]]&lt;&lt;/timed&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="49" name="Вопрос 3" tags="" position="800,750" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;&lt;set $text=&quot;Что вас больше всего мотивирует?&quot;&gt;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+[[Подготовить аналитику по запросу клиента и согласовать доработки|Вопрос 3][$Anal += 1]]&lt;&lt;/timed&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="44" name="Вопрос 3" tags="" position="800,750" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;&lt;set $text=&quot;Что вас больше всего мотивирует?&quot;&gt;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/HR/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;$text&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;&lt;timed `(($text.length * 0.08)) + &quot;s&quot;`&gt;&gt;[[Возможность анализировать данные и делать их понятными для других|Вопрос 4][$Anal += 1]]
 [[Решение сложных технических задач и автоматизация процессов|Вопрос 4][$Dev += 1]]
 [[Помощь клиентам и координация различных команд|Вопрос 4][$SM += 1]]
-[[Точность и чистота данных в отчетах|Вопрос 4][$Val += 1]]&lt;&lt;/timed&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="50" name="Вопрос 4" tags="" position="800,875" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;&lt;set $text=&quot;Какую задачу вы выбрали бы из списка?&quot;&gt;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+[[Точность и чистота данных в отчетах|Вопрос 4][$Val += 1]]&lt;&lt;/timed&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="45" name="Вопрос 4" tags="" position="800,875" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;&lt;set $text=&quot;Какую задачу вы выбрали бы из списка?&quot;&gt;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/HR/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;$text&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;&lt;timed `(($text.length * 0.07)) + &quot;s&quot;`&gt;&gt;[[Разработать концепцию дашборда для визуализации данных клиента|Вопрос 5][$Anal += 1]]
 [[Создать BI-приложение с уникальной структурой отчетов и визуализаций|Вопрос 5][$Dev += 1]]
 [[Настроить оборудование клиента и подготовить сервисное предложение|Вопрос 5][$SM += 1]]
-[[Удалить ложные события из отчетов и уведомить коллег о необходимости перенастройки|Вопрос 5][$Val += 1]]&lt;&lt;/timed&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="51" name="Вопрос 5" tags="" position="800,1000" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;&lt;set $text=&quot;Какой результат вы считаете успехом своей работы?&quot;&gt;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+[[Удалить ложные события из отчетов и уведомить коллег о необходимости перенастройки|Вопрос 5][$Val += 1]]&lt;&lt;/timed&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="46" name="Вопрос 5" tags="" position="800,1000" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;&lt;set $text=&quot;Какой результат вы считаете успехом своей работы?&quot;&gt;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/HR/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;$text&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;&lt;timed `(($text.length * 0.07)) + &quot;s&quot;`&gt;&gt;[[Все отчеты точны, данные очищены от ошибок|Обработка][$Val += 1]]
 [[Клиент доволен качеством обслуживания и своевременной поддержкой|Обработка][$SM += 1]]
 [[Готовый аналитический инструмент, которым клиент может легко пользоваться|Обработка][$Anal += 1]]
-[[Рабочее приложение, которое помогает пользователям принимать решения на основе данных|Обработка][$Dev += 1]]&lt;&lt;/timed&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="52" name="Вступление" tags="" position="800,250" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+[[Рабочее приложение, которое помогает пользователям принимать решения на основе данных|Обработка][$Dev += 1]]&lt;&lt;/timed&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="47" name="Вступление" tags="" position="800,250" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/HR/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Добро пожаловать! Мы рады видеть вас среди участников нашей стажировки. Здесь у вас будет уникальная возможность узнать больше о нашей компании, изучить профессию изнутри и даже попробовать свои силы в реальных рабочих задачах. Обычно это занимает не больше десяти минут.&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 &lt;/div&gt; 
-[[Далее|Вступление 1]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="53" name="Вступление 1" tags="" position="800,375" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+[[Далее|Вступление 1]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="48" name="Вступление 1" tags="" position="800,375" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/HR/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Для начала я бы хотела узнать немного больше о вас. У каждого человека есть свои сильные стороны и профессиональные интересы. Чтобы мы смогли подобрать для вас направление, максимально соответствующее вашим навыкам и склонностям, я задам несколько вопросов.&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 &lt;/div&gt; 
-[[Далее|Вопрос 1]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="54" name="Задание 1" tags="" position="300,2800" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Клиент, компания&lt;b&gt; &quot;ТехноПлюс&quot;&lt;/b&gt;, обратился в сервисный отдел с жалобой на нестабильную работу системы GPS-навигации. Проблема касается одного из объектов компании — крупного логистического склада, где используются грузоподъёмные машины.
+[[Далее|Вопрос 1]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="49" name="Задание 1" tags="" position="300,2625" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Клиент, компания&lt;b&gt; &quot;ТехноПлюс&quot;&lt;/b&gt;, обратился в сервисный отдел с жалобой на нестабильную работу системы GPS-навигации. Проблема касается одного из объектов компании — крупного логистического склада, где используются грузоподъёмные машины.
 
 По словам клиента, сразу после установки нового GPS-трекера NavTrack X300 прошлым поставщиком услуг в системе мониторинга начали происходить сбои:
 *Начались перелёты транспортного средства по карте.
@@ -1239,7 +1199,7 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 &lt;li&gt;Предложить оптимальный план действий для её устранения.&lt;/li&gt;&lt;/ol&gt;
 
 
-&lt;&lt;back назад&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="55" name="Лидерборд" tags="" position="625,125" size="100,100">&lt;div class=&quot;text-panel&quot;&gt;&lt;div id=&quot;leaderboard-container&quot;&gt;
+&lt;&lt;back назад&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="50" name="Лидерборд" tags="" position="625,125" size="100,100">&lt;div class=&quot;text-panel&quot;&gt;&lt;div id=&quot;leaderboard-container&quot;&gt;
     &lt;h2 id=&quot;leaderboard-title&quot;&gt;Лидерборд &lt;span id=&quot;profession-name&quot;&gt;&lt;/span&gt;&lt;/h2&gt;
     &lt;ul id=&quot;leaderboard&quot;&gt;&lt;/ul&gt;
 &lt;/div&gt;&lt;/div&gt;
@@ -1249,7 +1209,7 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 	console.log(State.getVar(&#39;$UserRole&#39;));
 	fetchLeaderboard(State.getVar(&#39;$UserRole&#39;), 10);
 &lt;&lt;/script&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="56" name="Обработка" tags="" position="1000,1125" size="100,100">&lt;&lt;set $prof to {
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="51" name="Обработка" tags="" position="1000,1125" size="100,100">&lt;&lt;set $prof to {
     &quot;разработчика&quot;: $Dev,
     &quot;валидатора&quot;: $Val,
     &quot;аналитика&quot;: $Anal,
@@ -1259,39 +1219,27 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 &lt;&lt;set $maxStat to Math.max(...Object.values($prof))&gt;&gt;
 &lt;&lt;set $maxKey to Object.keys($prof).find(key =&gt; $prof[key] === $maxStat)&gt;&gt;
 
-&lt;&lt;goto  [[Результаты]] &gt;&gt;</tw-passagedata><tw-passagedata pid="57" name="Отправить результаты" tags="" position="125,900" size="100,100">&lt;div id=&quot;image-slider&quot;&gt;&lt;div class=&quot;slider-wrapper&quot;&gt;
-        &lt;img class=&quot;slider-image&quot; src=&quot;Assets\Val\Задания\1\1&quot; alt=&quot;Image 1&quot;&gt;
-        &lt;img class=&quot;slider-image&quot; src=&quot;Assets\Val\Задания\1\2&quot; alt=&quot;Image 1&quot;&gt;
-        &lt;img class=&quot;slider-image&quot; src=&quot;Assets\Val\Задания\1\3&quot; alt=&quot;Image 1&quot;&gt;
-        &lt;img class=&quot;slider-image&quot; src=&quot;Assets\Val\Задания\1\4&quot; alt=&quot;Image 1&quot;&gt;
-    &lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;slider-controls&quot;&gt;&lt;button id=&quot;prev-btn&quot; class=&quot;slider-arrow&quot; disabled&gt;&amp;larr; Назад&lt;/button&gt;
-    &lt;button id=&quot;next-btn&quot; class=&quot;slider-arrow&quot;&gt;Вперёд &amp;rarr;&lt;/button&gt;&lt;/div&gt;
-
-&lt;script&gt;
-	initializeSlider();
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="58" name="Переход на лидерборд" tags="" position="200,3900" size="100,100">&lt;&lt;script&gt;&gt;
+&lt;&lt;goto  [[Результаты]] &gt;&gt;</tw-passagedata><tw-passagedata pid="52" name="Переход на лидерборд" tags="" position="200,3900" size="100,100">&lt;&lt;script&gt;&gt;
 	Get_anthveres(State.getVar(&#39;$UserRole&#39;));
 &lt;&lt;/script&gt;&gt;
 
-&lt;&lt;goto  [[Лидерборд]]&gt;&gt;</tw-passagedata><tw-passagedata pid="59" name="Разработчик 1" tags="" position="900,1375" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+&lt;&lt;goto  [[Лидерборд]]&gt;&gt;</tw-passagedata><tw-passagedata pid="53" name="Разработчик 1" tags="" position="900,1375" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/Dev/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;О, привет! Я Влад, один из BI-разработчиков. Рад, что тебя заинтересовала наша работа. Если ты здесь, значит, готов окунуться в мир данных и SQL-запросов.&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 &lt;/div&gt;
-[[Далее|Разработчик 2]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="60" name="Разработчик 2" tags="" position="900,1500" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+[[Далее|Разработчик 2]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="54" name="Разработчик 2" tags="" position="900,1500" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/Dev/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Вот это — наше основное поле боя. BI — это такая штука, которая превращает огромные массивы данных в красивые графики и таблицы. Но перед тем, как они станут красивыми, приходится потрудиться с кодом.&lt;&lt;/type&gt;&gt;&lt;/div&gt;&lt;/div&gt;
     
-[[Далее|Разработчик 3]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="61" name="Разработчик 3" tags="" position="900,1625" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+[[Далее|Разработчик 3]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="55" name="Разработчик 3" tags="" position="900,1625" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/Dev/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Работа разработчика — это не просто писать код. Мы также разбираемся в потребностях клиентов. Иногда аналитик говорит: &quot;Сделай мне отчёт, чтобы видеть всё о расходах топлива&quot;. Но без чёткого запроса к базе данных работа с ней может превратиться в непростую задачу.&lt;&lt;/type&gt;&gt;&lt;/div&gt;&lt;/div&gt;
     
-[[Далее|Разработчик 4]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="62" name="Разработчик 4" tags="" position="900,1750" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+[[Далее|Разработчик 4]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="56" name="Разработчик 4" tags="" position="900,1750" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/Dev/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Работа разработчика — это не просто писать код. Мы также разбираемся в потребностях клиентов. Иногда аналитик говорит: &quot;Сделай мне отчёт, чтобы видеть всё о расходах топлива&quot;. Но без чёткого запроса к базе данных работа с ней может превратиться в непростую задачу.&lt;&lt;/type&gt;&gt;&lt;/div&gt;&lt;/div&gt;
     
-[[Далее|Разработчик 5]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="63" name="Разработчик 5" tags="" position="900,1875" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+[[Далее|Разработчик 5]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="57" name="Разработчик 5" tags="" position="900,1875" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/Dev/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Твоя очередь! Сейчас я буду задавать вопросы для проверки твоих знаний. Это не только тест на логику, но и возможность попробовать себя в роли разработчика.&lt;&lt;/type&gt;&gt;&lt;/div&gt;&lt;/div&gt;
     
@@ -1316,11 +1264,11 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 
 &lt;&lt;script&gt;&gt;
 	startTimer();
-&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="64" name="Разработчик Финал" tags="" position="900,3600" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="58" name="Разработчик Финал" tags="" position="900,3600" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/Dev/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Ты прошел тест с хорошим результатом. Поздравляю! Если у тебя есть вопросы, не стесняйся задавать. Мы с радостью будем помогать тебе расти как специалисту. Так что добро пожаловать в команду, и удачи в следующем шаге на пути к мастерству!&lt;&lt;/type&gt;&gt;&lt;/div&gt;&lt;/div&gt;
     
-[[Закончить|Переход на лидерборд][$UserRole = &quot;DEV&quot;]]</tw-passagedata><tw-passagedata pid="65" name="Результаты" tags="" position="800,1250" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+[[Закончить|Переход на лидерборд][$UserRole = &quot;DEV&quot;]]</tw-passagedata><tw-passagedata pid="59" name="Результаты" tags="" position="800,1250" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/HR/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Поздравляю! Ты успешно прошел тест и, судя по результатам, твои сильные стороны подходят для профессии $maxKey. Теперь тебя ждет знакомство с одним из наших специалистов, который расскажет тебе больше о том, что тебя ждёт на этой позиции. Готов к следующему шагу?&lt;&lt;/type&gt;&gt;&lt;/div&gt;&lt;/div&gt;
     
@@ -1332,40 +1280,35 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
  	[[Приступить|Аналитик 1][$currentCharacter = &quot;Anal&quot;]]
  &lt;&lt;elseif $maxKey == &quot;сервисного менеджера&quot;&gt;&gt;
  	[[Приступить|СМ 1][$currentCharacter = &quot;SM&quot;]]
-&lt;&lt;/if&gt;&gt;
-
-[[СМ 1][$currentCharacter = &quot;SM&quot;]]
-[[Аналитик 1][$currentCharacter = &quot;Anal&quot;]]
-[[Разработчик 1][$currentCharacter = &quot;Dev&quot;]]
-[[Валидатор 1][$currentCharacter = &quot;Val&quot;]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="66" name="СМ 1" tags="" position="500,1375" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="60" name="СМ 1" tags="" position="500,1375" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/SM/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Привет! Меня зовут Сергей, и я один из сервисных менеджеров нашей компании. Рад познакомиться! Понимаю, что вы здесь, чтобы узнать, чем мы занимаемся и как это влияет на общую работу.&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 &lt;/div&gt; 
-[[Далее|СМ 2]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="67" name="СМ 2" tags="" position="500,1500" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+[[Далее|СМ 2]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="61" name="СМ 2" tags="" position="500,1500" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/SM/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;В двух словах, мы здесь на передовой работы с клиентами. Моя задача — сделать так, чтобы всё оборудование наших заказчиков работало как часы. Это может быть установка новых устройств, настройка систем или оперативное устранение неполадок.&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 &lt;/div&gt; 
-[[Далее|СМ 3]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="68" name="СМ 3" tags="" position="500,1625" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+[[Далее|СМ 3]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="62" name="СМ 3" tags="" position="500,1625" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/SM/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Вот типичный сценарий. Клиент звонит и говорит, что хочет оснастить свой объект оборудованием. Сначала я выясняю, какое именно оборудование им нужно и для каких задач. Затем готовлю предложение, организую выезд инженеров и слежу, чтобы всё было сделано вовремя.&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 &lt;/div&gt; 
-[[Далее|СМ 4]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="69" name="СМ 4" tags="" position="500,1750" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+[[Далее|СМ 4]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="63" name="СМ 4" tags="" position="500,1750" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/SM/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Вот типичный сценарий. Клиент звонит и говорит, что хочет оснастить свой объект оборудованием. Сначала я выясняю, какое именно оборудование им нужно и для каких задач. Затем готовлю предложение, организую выезд инженеров и слежу, чтобы всё было сделано вовремя.&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 &lt;/div&gt; 
-[[Далее|СМ 5]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="70" name="СМ 5" tags="" position="500,1875" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+[[Далее|СМ 5]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="64" name="СМ 5" tags="" position="500,1875" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/SM/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Помимо этого, мы ведём постоянную поддержку наших инженеров, занимаемся технической документацией и иногда даже продаём оборудование. Так что задач у нас много, но это делает работу ещё интереснее.&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 &lt;/div&gt; 
-[[Далее|СМ 6]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="71" name="СМ 6" tags="" position="500,2000" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+[[Далее|СМ 6]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="65" name="СМ 6" tags="" position="500,2000" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/SM/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Вот, взгляните на эту заявку. Это реальный пример того, с чем мы сталкиваемся каждый день. У клиента неисправна система связи, и нам нужно решить эту проблему. Для начала я проверяю настройки оборудования в системе и связываюсь с инженерами.&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 &lt;/div&gt; 
-[[Далее|СМ 7]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="72" name="СМ 7" tags="" position="500,2125" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+[[Далее|СМ 7]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="66" name="СМ 7" tags="" position="500,2125" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/SM/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 &lt;/div&gt; 
-[[Далее|СМ Кейс 1]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="73" name="СМ Кейс 1" tags="" position="500,2250" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Клиент, компания&lt;b&gt; &quot;ТехноПлюс&quot;&lt;/b&gt;, обратился в сервисный отдел с жалобой на нестабильную работу системы GPS-навигации. Проблема касается одного из объектов компании — крупного логистического склада, где используются грузоподъёмные машины.
+[[Далее|СМ Кейс 1]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="67" name="СМ Кейс 1" tags="" position="500,2250" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Клиент, компания&lt;b&gt; &quot;ТехноПлюс&quot;&lt;/b&gt;, обратился в сервисный отдел с жалобой на нестабильную работу системы GPS-навигации. Проблема касается одного из объектов компании — крупного логистического склада, где используются грузоподъёмные машины.
 
 По словам клиента, сразу после установки нового GPS-трекера NavTrack X300 прошлым поставщиком услуг в системе мониторинга начали происходить сбои:
 *Начались перелёты транспортного средства по карте.
@@ -1397,7 +1340,7 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
     },
     &quot;Time&quot;: &quot;&quot;,
     &quot;username&quot;: &quot;&quot;
-}&gt;&gt;</tw-passagedata><tw-passagedata pid="74" name="СМ Кейс 1 Задание 1" tags="" position="500,2375" size="100,100">&lt;div class=&quot;text-box&quot;&gt;1. Что вы сделаете в первую очередь?
+}&gt;&gt;</tw-passagedata><tw-passagedata pid="68" name="СМ Кейс 1 Задание 1" tags="" position="500,2375" size="100,100">&lt;div class=&quot;text-box&quot;&gt;1. Что вы сделаете в первую очередь?
 
 
 [[Проверю комплектность оборудования|СМ Кейс 1 Задание 2][$Ansveres[&quot;Ansveres&quot;][&quot;1&quot;] to&quot;A&quot;]]
@@ -1405,7 +1348,7 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 [[Свяжусь с клиентом, чтобы уточнить детали проблемы.|СМ Кейс 1 Задание 2][$Ansveres[&quot;Ansveres&quot;][&quot;1&quot;] to&quot;C&quot;]]
 [[Отправлю заявку на склад, чтобы заменить оборудование.|СМ Кейс 1 Задание 2][$Ansveres[&quot;Ansveres&quot;][&quot;1&quot;] to&quot;D&quot;]]
 
-[[Посмотреть задние|Задание 1]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="75" name="СМ Кейс 1 Задание 2" tags="" position="500,2500" size="100,100">&lt;div class=&quot;text-box&quot;&gt;2. Проверка оборудования показала, что АТ с внутренними антеннами не пригодны для использования в условиях работы складской логистики, ваши действия?
+[[Посмотреть задние|Задание 1]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="69" name="СМ Кейс 1 Задание 2" tags="" position="500,2500" size="100,100">&lt;div class=&quot;text-box&quot;&gt;2. Проверка оборудования показала, что АТ с внутренними антеннами не пригодны для использования в условиях работы складской логистики, ваши действия?
 
 
 [[Предложу клиенту переоснащение на подходящие оборудования с внешними антеннами GPS / ГЛОНАСС.|СМ Кейс 1 Задание 3][$Ansveres[&quot;Ansveres&quot;][&quot;2&quot;] to&quot;A&quot;]]
@@ -1413,7 +1356,7 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 [[Попытаюсь диагностировать проблему удалённо.|СМ Кейс 1 Задание 3][$Ansveres[&quot;Ansveres&quot;][&quot;2&quot;] to&quot;C&quot;]]
 [[Свяжусь с аналитиком, чтобы проверить данные о пробеге.|СМ Кейс 1 Задание 3][$Ansveres[&quot;Ansveres&quot;][&quot;2&quot;] to&quot;D&quot;]]
 
-[[Посмотреть задние|Задание 1]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="76" name="СМ Кейс 1 Задание 3" tags="" position="500,2625" size="100,100">&lt;div class=&quot;text-box&quot;&gt;3. Инженер сообщает, что проблема в неисправном GPS-модуле. Каковы ваши дальнейшие действия?
+[[Посмотреть задние|Задание 1]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="70" name="СМ Кейс 1 Задание 3" tags="" position="500,2625" size="100,100">&lt;div class=&quot;text-box&quot;&gt;3. Инженер сообщает, что проблема в неисправном GPS-модуле. Каковы ваши дальнейшие действия?
 
 
 [[Сообщу клиенту о необходимости замены оборудования и организую его доставку.|СМ Кейс 1 Задание 4][$Ansveres[&quot;Ansveres&quot;][&quot;3&quot;] to&quot;A&quot;]]
@@ -1421,7 +1364,7 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 [[Проигнорирую неисправность и закрою заявку.|СМ Кейс 1 Задание 4][$Ansveres[&quot;Ansveres&quot;][&quot;3&quot;] to&quot;C&quot;]]
 [[Отправлю неисправное оборудование обратно на склад для ремонта.|СМ Кейс 1 Задание 4][$Ansveres[&quot;Ansveres&quot;][&quot;3&quot;] to&quot;D&quot;]]
 
-[[Посмотреть задние|Задание 1]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="77" name="СМ Кейс 1 Задание 4" tags="" position="500,2750" size="100,100">&lt;div class=&quot;text-box&quot;&gt;4. Как вы оформите решение задачи в системе?
+[[Посмотреть задние|Задание 1]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="71" name="СМ Кейс 1 Задание 4" tags="" position="500,2750" size="100,100">&lt;div class=&quot;text-box&quot;&gt;4. Как вы оформите решение задачи в системе?
 
 
 [[Проверю корректность заполнения заявки и закрою её|СМ Кейс 2][$Ansveres[&quot;Ansveres&quot;][&quot;4&quot;] to&quot;A&quot;]]
@@ -1429,7 +1372,7 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 [[Напишу отчёт для руководителя, но не обновлю заявку в системе|СМ Кейс 2][$Ansveres[&quot;Ansveres&quot;][&quot;4&quot;] to&quot;C&quot;]]
 [[Уведомлю клиента о завершении работ без записи в системе|СМ Кейс 2][$Ansveres[&quot;Ansveres&quot;][&quot;4&quot;] to&quot;D&quot;]]
 
-[[Посмотреть задние|Задание 1]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="78" name="СМ Кейс 2" tags="" position="500,2900" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Сотрудник компании принял горячий звонок от клиента, и не выяснив все особенности локации эксплуатации парка транспортных средств «продал» клиенту готовое решение по мониторингу, в которое входило оснащение ТС современными системами контроля фактических показателей датчиков, позволяющее вести:
+[[Посмотреть задние|Задание 1]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="72" name="СМ Кейс 2" tags="" position="500,2900" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Сотрудник компании принял горячий звонок от клиента, и не выяснив все особенности локации эксплуатации парка транспортных средств «продал» клиенту готовое решение по мониторингу, в которое входило оснащение ТС современными системами контроля фактических показателей датчиков, позволяющее вести:
 *Учет расхода топлива в пересчете на пройденный километраж;
 *Учет расхода топлива на стоянке;
 *Общий учет топлива включая заправки;
@@ -1448,11 +1391,11 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 
 Анализ и комментарии инженера показали, что на пути следования ТС, особенно при приближении к границе РФ, фиксируется глушение сигнала GPS. А на АЗС сигнал и вовсе терялся до и после 5 км.
 [[Далее|СМ Кейс 2 Задание 1]]&lt;/div&gt;
-</tw-passagedata><tw-passagedata pid="79" name="СМ Финал" tags="" position="500,3600" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+</tw-passagedata><tw-passagedata pid="73" name="СМ Финал" tags="" position="500,3600" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/SM/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Ты прошел тест с хорошим результатом. Поздравляю! Если у тебя есть вопросы, не стесняйся задавать. Мы с радостью будем помогать тебе расти как специалисту. Так что добро пожаловать в команду, и удачи в следующем шаге на пути к мастерству!&lt;&lt;/type&gt;&gt;&lt;/div&gt;&lt;/div&gt;
     
-[[Закончить|Переход на лидерборд][$UserRole = &quot;SM&quot;]]</tw-passagedata><tw-passagedata pid="80" name="Задание 2" tags="" position="300,3200" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Сотрудник компании принял горячий звонок от клиента, и не выяснив все особенности локации эксплуатации парка транспортных средств «продал» клиенту готовое решение по мониторингу, в которое входило оснащение ТС современными системами контроля фактических показателей датчиков, позволяющее вести:
+[[Закончить|Переход на лидерборд][$UserRole = &quot;SM&quot;]]</tw-passagedata><tw-passagedata pid="74" name="Задание 2" tags="" position="300,3275" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Сотрудник компании принял горячий звонок от клиента, и не выяснив все особенности локации эксплуатации парка транспортных средств «продал» клиенту готовое решение по мониторингу, в которое входило оснащение ТС современными системами контроля фактических показателей датчиков, позволяющее вести:
 *Учет расхода топлива в пересчете на пройденный километраж;
 *Учет расхода топлива на стоянке;
 *Общий учет топлива включая заправки;
@@ -1471,7 +1414,7 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 
 Анализ и комментарии инженера показали, что на пути следования ТС, особенно при приближении к границе РФ, фиксируется глушение сигнала GPS. А на АЗС сигнал и вовсе терялся до и после 5 км.
 
-&lt;&lt;back назад&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="81" name="СМ Кейс 2 Задание 1" tags="" position="500,3025" size="100,100">&lt;div class=&quot;text-box&quot;&gt;1. Какая ошибка была допущена при продаже решения клиенту?
+&lt;&lt;back назад&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="75" name="СМ Кейс 2 Задание 1" tags="" position="500,3025" size="100,100">&lt;div class=&quot;text-box&quot;&gt;1. Какая ошибка была допущена при продаже решения клиенту?
 
 
 [[Не был проведён детальный анализ условий эксплуатации ТС перед предложением оборудования|СМ Кейс 2 Задание 2][$Ansveres[&quot;Ansveres&quot;][&quot;5&quot;] to&quot;A&quot;]]
@@ -1479,7 +1422,7 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 [[В заявку были включены лишние компоненты, которые увеличили стоимость решения|СМ Кейс 2 Задание 2][$Ansveres[&quot;Ansveres&quot;][&quot;5&quot;] to&quot;C&quot;]]
 [[Оборудование было установлено неправильно, что привело к некорректной работе|СМ Кейс 2 Задание 2][$Ansveres[&quot;Ansveres&quot;][&quot;5&quot;] to&quot;D&quot;]]
 
-[[Посмотреть задние|Задание 2]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="82" name="СМ Кейс 2 Задание 2" tags="" position="500,3150" size="100,100">&lt;div class=&quot;text-box&quot;&gt;2. Что, скорее всего, стало причиной отсутствия данных о пробеге и скорости на некоторых участках маршрута?
+[[Посмотреть задние|Задание 2]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="76" name="СМ Кейс 2 Задание 2" tags="" position="500,3150" size="100,100">&lt;div class=&quot;text-box&quot;&gt;2. Что, скорее всего, стало причиной отсутствия данных о пробеге и скорости на некоторых участках маршрута?
 
 
 [[Некорректные настройки терминала М-3(NT)|СМ Кейс 2 Задание 3][$Ansveres[&quot;Ansveres&quot;][&quot;6&quot;] to&quot;A&quot;]]
@@ -1487,7 +1430,7 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 [[Ошибки в алгоритмах расчёта пробега внутри системы мониторинга|СМ Кейс 2 Задание 3][$Ansveres[&quot;Ansveres&quot;][&quot;6&quot;] to&quot;C&quot;]]
 [[Неверное подключение ДУТ, что повлияло на передачу GPS-данных|СМ Кейс 2 Задание 3][$Ansveres[&quot;Ansveres&quot;][&quot;6&quot;] to&quot;D&quot;]]
 
-[[Посмотреть задние|Задание 2]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="83" name="Anal вопрос 5" tags="" position="700,2625" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Выберите правильный вариант ответа
+[[Посмотреть задние|Задание 2]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="77" name="Anal вопрос 5" tags="" position="700,2625" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Выберите правильный вариант ответа
 
 &lt;div id=&quot;image-slider&quot;&gt;&lt;div class=&quot;slider-wrapper&quot;&gt;
         &lt;img class=&quot;slider-image&quot; src=&quot;Assets\Anal\Задания\5\1.png&quot; alt=&quot;Image 1&quot;&gt;
@@ -1496,7 +1439,7 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 [[По указанной топливной карте заправлялось другое ТС|Anal вопрос 6][$Ansveres[&quot;Ansveres&quot;][&quot;5&quot;] to&quot;A&quot;]]
 [[Не исправен ДУТ|Anal вопрос 6][$Ansveres[&quot;Ansveres&quot;][&quot;5&quot;] to&quot;B&quot;]]
 [[ТС находилось в простое (двигатель был заглушен и данные не поступали)|Anal вопрос 6][$Ansveres[&quot;Ansveres&quot;][&quot;5&quot;] to&quot;C&quot;]]
-[[Все ответы верные|Anal вопрос 6][$Ansveres[&quot;Ansveres&quot;][&quot;5&quot;] to&quot;D&quot;]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="84" name="Anal вопрос 6" tags="" position="700,2750" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Выберите правильный вариант ответа
+[[Все ответы верные|Anal вопрос 6][$Ansveres[&quot;Ansveres&quot;][&quot;5&quot;] to&quot;D&quot;]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="78" name="Anal вопрос 6" tags="" position="700,2750" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Выберите правильный вариант ответа
 
 &lt;div id=&quot;image-slider&quot;&gt;&lt;div class=&quot;slider-wrapper&quot;&gt;
         &lt;img class=&quot;slider-image&quot; src=&quot;Assets\Anal\Задания\6\1.png&quot; alt=&quot;Image 1&quot;&gt;
@@ -1505,7 +1448,7 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 [[На обоих ТС неправильно выставлен уровень холостых оборотов|Anal вопрос 7][$Ansveres[&quot;Ansveres&quot;][&quot;6&quot;] to&quot;A&quot;]]
 [[На обоих ТС не фиксируются реальные обороты|Anal вопрос 7][$Ansveres[&quot;Ansveres&quot;][&quot;6&quot;] to&quot;B&quot;]]
 [[Экскаватор движется, а Сварочная техника стоит на месте|Anal вопрос 7][$Ansveres[&quot;Ansveres&quot;][&quot;6&quot;] to&quot;C&quot;]]
-[[Экскаватор движется, а Сварочная техника находится в ремонте|Anal вопрос 7][$Ansveres[&quot;Ansveres&quot;][&quot;6&quot;] to&quot;D&quot;]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="85" name="Anal вопрос 7" tags="" position="700,2875" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Выберите правильный вариант ответа
+[[Экскаватор движется, а Сварочная техника находится в ремонте|Anal вопрос 7][$Ansveres[&quot;Ansveres&quot;][&quot;6&quot;] to&quot;D&quot;]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="79" name="Anal вопрос 7" tags="" position="700,2875" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Выберите правильный вариант ответа
 
 &lt;div id=&quot;image-slider&quot;&gt;&lt;div class=&quot;slider-wrapper&quot;&gt;
         &lt;img class=&quot;slider-image&quot; src=&quot;Assets\Anal\Задания\7\1.png&quot; alt=&quot;Image 1&quot;&gt;
@@ -1514,7 +1457,7 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 [[ТС находится в работе|Anal вопрос 8][$Ansveres[&quot;Ansveres&quot;][&quot;7&quot;] to&quot;A&quot;]]
 [[На ТС неисправен датчик дополнительного оборудования|Anal вопрос 8][$Ansveres[&quot;Ansveres&quot;][&quot;7&quot;] to&quot;B&quot;]]
 [[На ТС неверно настроенны холостые обороты|Anal вопрос 8][$Ansveres[&quot;Ansveres&quot;][&quot;7&quot;] to&quot;C&quot;]]
-[[ТС находится в простое|Anal вопрос 8][$Ansveres[&quot;Ansveres&quot;][&quot;7&quot;] to&quot;D&quot;]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="86" name="Anal вопрос 8" tags="" position="700,3000" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Выберите правильный вариант ответа
+[[ТС находится в простое|Anal вопрос 8][$Ansveres[&quot;Ansveres&quot;][&quot;7&quot;] to&quot;D&quot;]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="80" name="Anal вопрос 8" tags="" position="700,3000" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Выберите правильный вариант ответа
 
 &lt;div id=&quot;image-slider&quot;&gt;&lt;div class=&quot;slider-wrapper&quot;&gt;
         &lt;img class=&quot;slider-image&quot; src=&quot;Assets\Anal\Задания\8\1.png&quot; alt=&quot;Image 1&quot;&gt;
@@ -1523,11 +1466,11 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 [[Все верно|Аналитик Финал][$Ansveres[&quot;Ansveres&quot;][&quot;8&quot;] to&quot;A&quot;]]
 [[В автопарке большой простой необходимо проверить настройки ХХ|Аналитик Финал][$Ansveres[&quot;Ansveres&quot;][&quot;8&quot;] to&quot;B&quot;]]
 [[Подгрузились не все данные за период|Аналитик Финал][$Ansveres[&quot;Ansveres&quot;][&quot;8&quot;] to&quot;C&quot;]]
-[[В автопарке большой КПД необходимо проверить настройки ХХ|Аналитик Финал][$Ansveres[&quot;Ansveres&quot;][&quot;8&quot;] to&quot;D&quot;]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="87" name="Аналитик Финал" tags="" position="700,3600" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+[[В автопарке большой КПД необходимо проверить настройки ХХ|Аналитик Финал][$Ansveres[&quot;Ansveres&quot;][&quot;8&quot;] to&quot;D&quot;]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="81" name="Аналитик Финал" tags="" position="700,3600" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/Anal/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Ты прошел тест с хорошим результатом. Поздравляю! Если у тебя есть вопросы, не стесняйся задавать. Мы с радостью будем помогать тебе расти как специалисту. Так что добро пожаловать в команду, и удачи в следующем шаге на пути к мастерству!&lt;&lt;/type&gt;&gt;&lt;/div&gt;&lt;/div&gt;
     
-[[Закончить|Переход на лидерборд][$UserRole = &quot;ANALYTIC&quot;]]</tw-passagedata><tw-passagedata pid="88" name="СМ Кейс 2 Задание 3" tags="" position="500,3275" size="100,100">&lt;div class=&quot;text-box&quot;&gt;3. Почему система фиксировала ложные сливы топлива?
+[[Закончить|Переход на лидерборд][$UserRole = &quot;ANALYTIC&quot;]]</tw-passagedata><tw-passagedata pid="82" name="СМ Кейс 2 Задание 3" tags="" position="500,3275" size="100,100">&lt;div class=&quot;text-box&quot;&gt;3. Почему система фиксировала ложные сливы топлива?
 
 
 [[Некорректные настройки терминала М-3(NT)|СМ Кейс 2 Задание 4][$Ansveres[&quot;Ansveres&quot;][&quot;7&quot;] to&quot;A&quot;]]
@@ -1535,7 +1478,7 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 [[Ошибки в алгоритмах расчёта пробега внутри системы мониторинга|СМ Кейс 2 Задание 4][$Ansveres[&quot;Ansveres&quot;][&quot;7&quot;] to&quot;C&quot;]]
 [[Неверное подключение ДУТ, что повлияло на передачу GPS-данных|СМ Кейс 2 Задание 4][$Ansveres[&quot;Ansveres&quot;][&quot;7&quot;] to&quot;D&quot;]]
 
-[[Посмотреть задние|Задание 2]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="89" name="СМ Кейс 2 Задание 4" tags="" position="500,3400" size="100,100">&lt;div class=&quot;text-box&quot;&gt;4. Как можно было предотвратить возникшие проблемы на этапе продажи?
+[[Посмотреть задние|Задание 2]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="83" name="СМ Кейс 2 Задание 4" tags="" position="500,3400" size="100,100">&lt;div class=&quot;text-box&quot;&gt;4. Как можно было предотвратить возникшие проблемы на этапе продажи?
 
 
 [[Провести предварительное обследование условий эксплуатации ТС и учесть особенности маршрута|СМ Финал][$Ansveres[&quot;Ansveres&quot;][&quot;8&quot;] to&quot;A&quot;]]
