@@ -567,9 +567,7 @@ window.fetchLeaderboard = async function (profession, topN = 10) {
 
             const username = document.createElement('span');
             username.classList.add('username');
-            username.textContent = entry.username.length > 10
-                ? `${entry.username.slice(0, 10)}...`
-                : entry.username;
+            username.textContent = entry.username;
 
             const highscore = document.createElement('span');
             highscore.classList.add('highscore');
