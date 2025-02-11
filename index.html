@@ -313,9 +313,9 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
     $('body').find('#ui-bar').hide();
     if (sessionStorage.getItem("montrans-.state")) {
       sessionStorage.removeItem("montrans-.state");
-      console.log("Поле 'montrans-.state' успешно удалено из хранилища сеанса.");
+      // console.log("Поле 'montrans-.state' успешно удалено из хранилища сеанса.");
   	} else {
-      console.log("Поле 'montrans-.state' не найдено в хранилище сеанса.");
+      // console.log("Поле 'montrans-.state' не найдено в хранилище сеанса.");
   	}
 });
 
@@ -522,7 +522,7 @@ window.SetStatus = function(){
   	State.setVar('$UserRole', userData.UserRole);
 }
 
-console.log(userData);
+// console.log(userData);
 
 window.fetchLeaderboard = async function (profession, topN = 10) {
     try {
@@ -540,7 +540,7 @@ window.fetchLeaderboard = async function (profession, topN = 10) {
         const response = await fetch(`https://tgapibase-grickothegecko.amvera.io/api/role/${profession}`);
         const leaderboardData = await response.json();
         const userName = userData.UserName; // Имя текущего пользователя
-        console.log('Fetched leaderboard data:', leaderboardData);
+        // console.log('Fetched leaderboard data:', leaderboardData);
 
         if (!Array.isArray(leaderboardData)) {
             console.error('Fetched data is not an array:', leaderboardData);
@@ -625,7 +625,7 @@ let startTime;
 
 window.startTimer = function() {
     startTime = Date.now(); // Сохраняем текущее время в миллисекундах
-    console.log("Отсчёт начат");
+    // console.log("Отсчёт начат");
 }
 
 window.endTimer = function() {
@@ -635,7 +635,7 @@ window.endTimer = function() {
     }
 
     let elapsedSeconds = Math.floor((Date.now() - startTime) / 1000); // Вычисляем прошедшее время в секундах
-    console.log(`Прошло ${elapsedSeconds} секунд`);
+    // console.log(`Прошло ${elapsedSeconds} секунд`);
     return elapsedSeconds;
 }
 
@@ -645,8 +645,8 @@ window.Get_anthveres = function(role){
     jsonString["Time"] = endTimer();
   	jsonString["username"] = userData.UserName;
   	
-    console.log(jsonString); // Проверка результата в консоли
-    console.log(JSON.stringify(jsonString)); // Проверка результата в консоли
+    // console.log(jsonString); // Проверка результата в консоли
+    // console.log(JSON.stringify(jsonString)); // Проверка результата в консоли
 
     fetch(`https://tgapibase-grickothegecko.amvera.io/api/add-score/${role}`, {
           method: "POST",
@@ -663,18 +663,12 @@ window.Get_anthveres = function(role){
             }
         })
         .then(data => {
-            console.log("Server response:", data);
+            // console.log("Server response:", data);
         })
         .catch(error => {
             console.error("Error sending POST request:", error);
         });
 }
-
-
-
-
-
-
 
 
 window.initializeSlider = function() {
