@@ -850,8 +850,8 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 &lt;&lt;set $UserStatus to &quot;&quot;&gt;&gt;
 &lt;&lt;set $UserRole&gt;&gt;
 &lt;&lt;set $currentCharacter to &quot;HR&quot;&gt;&gt;
-    
-&lt;&lt;set $Sex to -1&gt;&gt;
+&lt;&lt;set $UserRole = &quot;VALIDATOR&quot;&gt;&gt;
+&lt;&lt;set $Sex to 0&gt;&gt;
 
 &lt;&lt;set $sprites to {
     &quot;HR&quot;: {
@@ -1084,6 +1084,7 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
     &quot;Time&quot;: &quot;&quot;,
     &quot;username&quot;: &quot;&quot;
 }&gt;&gt;
+
 &lt;&lt;set $UserRole = &quot;ANALYTIC&quot;&gt;&gt;
 
 &lt;&lt;script&gt;&gt;
@@ -1180,7 +1181,7 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
         &lt;img class=&quot;slider-image&quot; src=&quot;Assets\Val\Обучение\4.png&quot; alt=&quot;Image 1&quot;&gt;
 &lt;/div&gt;&lt;/div&gt;
 &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Теперь этот график. Уровень топлива скачет вверх и вниз. Это может означать, что ТС едет по неровной местности. Но если колебания слишком сильные или выходят за пределы нормы, значит, что датчик неисправен, либо требуется повторная калибровка, либо в топливном баке мусор&lt;&lt;/type&gt;&gt;
-[[Далее|Валидатор 5]]&lt;/div&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="41" name="Валидатор Финал" tags="" position="1100,3900" size="100,100">&lt;&lt;set $Sex to 0&gt;&gt;&lt;&lt;script&gt;&gt; State.setVar(&#39;$Sex&#39;, Get_results(State.getVar(&#39;$UserRole&#39;)));&lt;&lt;/script&gt;&gt;&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+[[Далее|Валидатор 5]]&lt;/div&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="41" name="Валидатор Финал" tags="" position="1100,3900" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/Val/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Ты прошел тест с результатом: $Sex.. Поздравляю! Если у тебя есть вопросы, не стесняйся задавать. Мы с радостью будем помогать тебе расти как специалисту. Так что добро пожаловать в команду, и удачи в следующем шаге на пути к мастерству!&lt;&lt;/type&gt;&gt;&lt;/div&gt;&lt;/div&gt;
     
@@ -1317,7 +1318,7 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 
 &lt;&lt;script&gt;&gt;
 	startTimer();
-&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="58" name="Разработчик Финал" tags="" position="900,3900" size="100,100">&lt;&lt;set $Sex to 0&gt;&gt;&lt;&lt;script&gt;&gt; State.setVar(&#39;$Sex&#39;, Get_results(State.getVar(&#39;$UserRole&#39;)));&lt;&lt;/script&gt;&gt;&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="58" name="Разработчик Финал" tags="" position="900,3900" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/Dev/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Ты прошел тест с результатом: $Sex. Поздравляю! Если у тебя есть вопросы, не стесняйся задавать. Мы с радостью будем помогать тебе расти как специалисту. Так что добро пожаловать в команду, и удачи в следующем шаге на пути к мастерству!&lt;&lt;/type&gt;&gt;&lt;/div&gt;&lt;/div&gt;
     
@@ -1462,7 +1463,7 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 
 
 [[Далее|СМ Кейс 2 Задание 1]]&lt;/div&gt;
-</tw-passagedata><tw-passagedata pid="73" name="СМ Финал" tags="" position="500,3900" size="100,100">&lt;&lt;script&gt;&gt; State.setVar(&#39;$Sex&#39;, Get_results(State.getVar(&#39;$UserRole&#39;)));&lt;&lt;/script&gt;&gt;&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+</tw-passagedata><tw-passagedata pid="73" name="СМ Финал" tags="" position="500,3900" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/SM/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Ты прошел тест с результатом: $Sex. Поздравляю! Если у тебя есть вопросы, не стесняйся задавать. Мы с радостью будем помогать тебе расти как специалисту. Так что добро пожаловать в команду, и удачи в следующем шаге на пути к мастерству!&lt;&lt;/type&gt;&gt;&lt;/div&gt;&lt;/div&gt;
     
