@@ -685,7 +685,7 @@ window.Get_results = function(role){
       })
           .then(response => {
             if (response.ok) {
-                response.json(); // Если нужно обработать ответ
+                return response.json(); // Если нужно обработать ответ
             } else {
                 throw new Error("Network response was not ok");
             }
