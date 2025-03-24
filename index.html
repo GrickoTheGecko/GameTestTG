@@ -693,6 +693,7 @@ window.Get_results = function(role){
         .then(data => {
       		State.setVar('$Sex', data.highscore);
       		console.log(data.highscore)
+      		console.log(data['highscore'])
             return data.highscore;
         })
         .catch(error => {
