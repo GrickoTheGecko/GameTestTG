@@ -672,14 +672,15 @@ window.Get_anthveres = function(role){
 
 
 window.Get_results = function(role){
+  	State.setVar('$Sex', 1488);
     let jsonString = State.getVar('$Ansveres');
     jsonString["Time"] = endTimer();
   	jsonString["username"] = userData.UserName;
-
     fetch(`https://tgapibase-grickothegecko.amvera.io/api/check-answers/${role}`, {
           method: "POST",
           headers: {
               "Content-Type": "application/json",
+              "Access-Control-Allow-Origin": "https://grickothegecko.github.io"
           },
           body: JSON.stringify(jsonString),
       })
@@ -692,7 +693,8 @@ window.Get_results = function(role){
         })
         .then(data => {
       		console.log(data.highscore);
-            State.setVar('$Sex', data.highscore);
+           	//State.setVar('$Sex', data.highscore);
+      		State.variables.Sex = data.highscore
       		return data.highscore;
         })
         .catch(error => {
