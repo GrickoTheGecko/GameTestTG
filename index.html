@@ -1198,7 +1198,10 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/HR/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Добро пожаловать! Мы рады видеть вас среди участников нашей стажировки. Здесь у вас будет уникальная возможность узнать больше о нашей компании, изучить профессию изнутри и даже попробовать свои силы в реальных рабочих задачах. Обычно это занимает не больше десяти минут.&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 &lt;/div&gt; 
-[[Далее|Вступление 1]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="48" name="Вступление 1" tags="" position="800,375" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+[[Далее|Вступление 1]]&lt;/div&gt;
+
+
+[[Аналитик 6]]</tw-passagedata><tw-passagedata pid="48" name="Вступление 1" tags="" position="800,375" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/HR/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Для начала я бы хотела узнать немного больше о вас. У каждого человека есть свои сильные стороны и профессиональные интересы. Чтобы мы смогли подобрать для вас направление, максимально соответствующее вашим навыкам и склонностям, я задам несколько вопросов.&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 &lt;/div&gt; 
@@ -1372,7 +1375,11 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
     &quot;username&quot;: &quot;&quot;
 }&gt;&gt;
 
-&lt;&lt;set $UserRole = &quot;SM&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="68" name="СМ Кейс 1 Задание 1" tags="" position="500,2375" size="100,100">&lt;div class=&quot;text-box&quot;&gt;1. Что вы сделаете в первую очередь?
+&lt;&lt;set $UserRole = &quot;SM&quot;&gt;&gt;
+
+&lt;&lt;script&gt;&gt;
+	startTimer();
+&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="68" name="СМ Кейс 1 Задание 1" tags="" position="500,2375" size="100,100">&lt;div class=&quot;text-box&quot;&gt;1. Что вы сделаете в первую очередь?
 
 
 [[Проверю комплектность и состав ,установленного оборудования, его состав и спецификацию|СМ Кейс 1 Задание 2][$Ansveres[&quot;Ansveres&quot;][&quot;1&quot;] to&quot;A&quot;]]
@@ -1422,6 +1429,8 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 Изучив фактическую телеметрию, СМ принял решение о повторном выезде инженера на место основного базирования ТС клиента, учитывая его маршрут с фиксацией работы навигатора с заездом на партнерскую АЗС.
 
 Анализ и комментарии инженера показали, что на пути следования ТС, особенно при приближении к границе РФ, фиксируется глушение сигнала GPS. А на АЗС сигнал и вовсе терялся до и после 5 км.
+
+
 [[Далее|СМ Кейс 2 Задание 1]]&lt;/div&gt;
 </tw-passagedata><tw-passagedata pid="73" name="СМ Финал" tags="" position="500,3600" size="100,100">&lt;&lt;set $Sex to 0&gt;&gt;&lt;&lt;script&gt;&gt; State.setVar(Get_results(&#39;$Sex&#39;, State.getVar(&#39;$UserRole&#39;)));&lt;&lt;/script&gt;&gt;&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/SM/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
