@@ -1059,6 +1059,7 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
     &quot;Time&quot;: &quot;&quot;,
     &quot;username&quot;: &quot;&quot;
 }&gt;&gt;
+&lt;&lt;set $UserRole = &quot;ANALYTIC&quot;&gt;&gt;
 
 &lt;&lt;script&gt;&gt;
 	startTimer();
@@ -1098,6 +1099,8 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
     &quot;Time&quot;: &quot;&quot;,
     &quot;username&quot;: &quot;&quot;
 }&gt;&gt;
+
+&lt;&lt;set $UserRole = &quot;VALIDATOR&quot;&gt;&gt;
 
 &lt;&lt;script&gt;&gt;
 	startTimer();
@@ -1156,7 +1159,7 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/Val/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Ты прошел тест с результатом: $Sex.. Поздравляю! Если у тебя есть вопросы, не стесняйся задавать. Мы с радостью будем помогать тебе расти как специалисту. Так что добро пожаловать в команду, и удачи в следующем шаге на пути к мастерству!&lt;&lt;/type&gt;&gt;&lt;/div&gt;&lt;/div&gt;
     
-[[Закончить|Переход на лидерборд][$UserRole = &quot;VALIDATOR&quot;]]</tw-passagedata><tw-passagedata pid="42" name="Вопрос 1" tags="" position="800,500" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;&lt;set $text=&quot;Что вам нравится больше в работе?&quot;&gt;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+[[Закончить|Переход на лидерборд]]</tw-passagedata><tw-passagedata pid="42" name="Вопрос 1" tags="" position="800,500" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;&lt;set $text=&quot;Что вам нравится больше в работе?&quot;&gt;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/HR/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;$text&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -1240,6 +1243,12 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 
 &lt;&lt;goto  [[Результаты]] &gt;&gt;</tw-passagedata><tw-passagedata pid="52" name="Переход на лидерборд" tags="" position="175,3900" size="100,100">&lt;&lt;goto [[Далее|Лидерборд]]&gt;&gt;
 
+&lt;&lt;if $UserStatus == &quot;locked&quot;&gt;&gt;
+	&lt;&lt;goto  [[Лидерборд]] &gt;&gt;
+ &lt;&lt;else&gt;&gt;
+	&lt;&lt;goto  [[Вступление]] &gt;&gt;
+&lt;&lt;/if&gt;&gt;
+
 &lt;&lt;script&gt;&gt;
 	Get_anthveres(State.getVar(&#39;$UserRole&#39;));
 &lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="53" name="Разработчик 1" tags="" position="900,1375" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
@@ -1281,13 +1290,15 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
     &quot;username&quot;: &quot;&quot;
 }&gt;&gt;
 
+&lt;&lt;set $UserRole = &quot;DEV&quot;&gt;&gt;
+
 &lt;&lt;script&gt;&gt;
 	startTimer();
 &lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="58" name="Разработчик Финал" tags="" position="900,3600" size="100,100">&lt;&lt;set $Sex to 0&gt;&gt;&lt;&lt;script&gt;&gt; State.setVar(Get_results(&#39;$Sex&#39;, State.getVar(&#39;$UserRole&#39;)));&lt;&lt;/script&gt;&gt;&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/Dev/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Ты прошел тест с результатом: $Sex. Поздравляю! Если у тебя есть вопросы, не стесняйся задавать. Мы с радостью будем помогать тебе расти как специалисту. Так что добро пожаловать в команду, и удачи в следующем шаге на пути к мастерству!&lt;&lt;/type&gt;&gt;&lt;/div&gt;&lt;/div&gt;
     
-[[Закончить|Переход на лидерборд][$UserRole = &quot;DEV&quot;]]</tw-passagedata><tw-passagedata pid="59" name="Результаты" tags="" position="800,1250" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+[[Закончить|Переход на лидерборд]]</tw-passagedata><tw-passagedata pid="59" name="Результаты" tags="" position="800,1250" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/HR/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Поздравляю! Ты успешно прошел тест и, судя по результатам, твои сильные стороны подходят для профессии $maxKey. Теперь тебя ждет знакомство с одним из наших специалистов, который расскажет тебе больше о том, что тебя ждёт на этой позиции. Готов к следующему шагу?&lt;&lt;/type&gt;&gt;&lt;/div&gt;&lt;/div&gt;
     
@@ -1359,7 +1370,9 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
     },
     &quot;Time&quot;: &quot;&quot;,
     &quot;username&quot;: &quot;&quot;
-}&gt;&gt;</tw-passagedata><tw-passagedata pid="68" name="СМ Кейс 1 Задание 1" tags="" position="500,2375" size="100,100">&lt;div class=&quot;text-box&quot;&gt;1. Что вы сделаете в первую очередь?
+}&gt;&gt;
+
+&lt;&lt;set $UserRole = &quot;SM&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="68" name="СМ Кейс 1 Задание 1" tags="" position="500,2375" size="100,100">&lt;div class=&quot;text-box&quot;&gt;1. Что вы сделаете в первую очередь?
 
 
 [[Проверю комплектность и состав ,установленного оборудования, его состав и спецификацию|СМ Кейс 1 Задание 2][$Ansveres[&quot;Ansveres&quot;][&quot;1&quot;] to&quot;A&quot;]]
@@ -1414,7 +1427,7 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/SM/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Ты прошел тест с результатом: $Sex. Поздравляю! Если у тебя есть вопросы, не стесняйся задавать. Мы с радостью будем помогать тебе расти как специалисту. Так что добро пожаловать в команду, и удачи в следующем шаге на пути к мастерству!&lt;&lt;/type&gt;&gt;&lt;/div&gt;&lt;/div&gt;
     
-[[Закончить|Переход на лидерборд][$UserRole = &quot;SM&quot;]]</tw-passagedata><tw-passagedata pid="74" name="Задание 2" tags="" position="300,3275" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Сотрудник компании принял горячий звонок от клиента, и не выяснив все особенности локации эксплуатации парка транспортных средств «продал» клиенту готовое решение по мониторингу, в которое входило оснащение ТС современными системами контроля фактических показателей датчиков, позволяющее вести:
+[[Закончить|Переход на лидерборд]]</tw-passagedata><tw-passagedata pid="74" name="Задание 2" tags="" position="300,3275" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Сотрудник компании принял горячий звонок от клиента, и не выяснив все особенности локации эксплуатации парка транспортных средств «продал» клиенту готовое решение по мониторингу, в которое входило оснащение ТС современными системами контроля фактических показателей датчиков, позволяющее вести:
 *Учет расхода топлива в пересчете на пройденный километраж;
 *Учет расхода топлива на стоянке;
 *Общий учет топлива включая заправки;
@@ -1489,7 +1502,7 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/Anal/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Ты прошел тест с результатом: $Sex. Поздравляю! Если у тебя есть вопросы, не стесняйся задавать. Мы с радостью будем помогать тебе расти как специалисту. Так что добро пожаловать в команду, и удачи в следующем шаге на пути к мастерству!&lt;&lt;/type&gt;&gt;&lt;/div&gt;&lt;/div&gt;
     
-[[Закончить|Переход на лидерборд][$UserRole = &quot;ANALYTIC&quot;]]</tw-passagedata><tw-passagedata pid="82" name="СМ Кейс 2 Задание 3" tags="" position="500,3275" size="100,100">&lt;div class=&quot;text-box&quot;&gt;3. Почему система фиксировала ложные сливы топлива?
+[[Закончить|Переход на лидерборд]]</tw-passagedata><tw-passagedata pid="82" name="СМ Кейс 2 Задание 3" tags="" position="500,3275" size="100,100">&lt;div class=&quot;text-box&quot;&gt;3. Почему система фиксировала ложные сливы топлива?
 
 
 [[Неверная калибровка датчиков уровня топлива (ДУТ)|СМ Кейс 2 Задание 4][$Ansveres[&quot;Ansveres&quot;][&quot;7&quot;] to&quot;A&quot;]]
