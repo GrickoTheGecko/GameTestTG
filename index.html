@@ -685,22 +685,18 @@ window.Get_results = function(role){
       })
           .then(response => {
             if (response.ok) {
-                //response.json(); // Если нужно обработать ответ
+                return response.json(); // Если нужно обработать ответ
             } else {
                 throw new Error("Network response was not ok");
             }
         })
         .then(data => {
-      		State.setVar('$Sex', data.highscore);
-      		console.log(data.highscore)
-      		console.log(data['highscore'])
             return data.highscore;
         })
         .catch(error => {
             console.error("Error sending POST request:", error);
         });
 }
-
 
 
 window.initializeSlider = function() {
@@ -1510,9 +1506,7 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 [[Подгрузились не все данные за период|Аналитик Финал][$Ansveres[&quot;Ansveres&quot;][&quot;8&quot;] to&quot;A&quot;]]
 [[В автопарке большой простой необходимо проверить настройки ХХ|Аналитик Финал][$Ansveres[&quot;Ansveres&quot;][&quot;8&quot;] to&quot;B&quot;]]
 [[Все верно|Аналитик Финал][$Ansveres[&quot;Ansveres&quot;][&quot;8&quot;] to&quot;C&quot;]]
-[[В автопарке большой КПД необходимо проверить настройки ХХ|Аналитик Финал][$Ansveres[&quot;Ansveres&quot;][&quot;8&quot;] to&quot;D&quot;]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="81" name="Аналитик Финал" tags="" position="700,3600" size="100,100">&lt;&lt;set $Sex to 0&gt;&gt;&lt;&lt;script&gt;&gt;
-     Get_results(State.getVar(&#39;$UserRole&#39;));
-&lt;&lt;/script&gt;&gt;&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+[[В автопарке большой КПД необходимо проверить настройки ХХ|Аналитик Финал][$Ansveres[&quot;Ansveres&quot;][&quot;8&quot;] to&quot;D&quot;]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="81" name="Аналитик Финал" tags="" position="700,3600" size="100,100">&lt;&lt;set $Sex to 0&gt;&gt;&lt;&lt;script&gt;&gt;State.setVar(&#39;$Sex&#39;, Get_results(State.getVar(&#39;$UserRole&#39;)));&lt;&lt;/script&gt;&gt;&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/Anal/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;Ты прошел тест с результатом: $Sex. Поздравляю! Если у тебя есть вопросы, не стесняйся задавать. Мы с радостью будем помогать тебе расти как специалисту. Так что добро пожаловать в команду, и удачи в следующем шаге на пути к мастерству!&lt;&lt;/type&gt;&gt;&lt;/div&gt;&lt;/div&gt;
     
