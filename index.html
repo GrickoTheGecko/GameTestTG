@@ -692,9 +692,8 @@ window.Get_results = function(role){
             }
         })
         .then(data => {
-      		console.log(data.highscore);
-           	//State.setVar('$Sex', data.highscore);
-      		State.variables.Sex = data.highscore
+      		console.log(typeof data.highscore);
+           	State.setVar('$Sex', data.highscore);
       		return data.highscore;
         })
         .catch(error => {
