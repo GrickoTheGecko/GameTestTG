@@ -691,6 +691,7 @@ window.Get_results = function(role){
             }
         })
         .then(data => {
+      		console.log(data.highscore);
             State.setVar('$Sex', data.highscore);
       		return data.highscore;
         })
@@ -846,6 +847,8 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 &lt;&lt;set $UserRole&gt;&gt;
 &lt;&lt;set $currentCharacter to &quot;HR&quot;&gt;&gt;
     
+&lt;&lt;set $Sex to -1&gt;&gt;
+
 &lt;&lt;set $sprites to {
     &quot;HR&quot;: {
         &quot;idle&quot;: &quot;Assets/HR/idle.png&quot;,
@@ -1507,7 +1510,7 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 [[Подгрузились не все данные за период|Аналитик Финал][$Ansveres[&quot;Ansveres&quot;][&quot;8&quot;] to&quot;A&quot;]]
 [[В автопарке большой простой необходимо проверить настройки ХХ|Аналитик Финал][$Ansveres[&quot;Ansveres&quot;][&quot;8&quot;] to&quot;B&quot;]]
 [[Все верно|Аналитик Финал][$Ansveres[&quot;Ansveres&quot;][&quot;8&quot;] to&quot;C&quot;]]
-[[В автопарке большой КПД необходимо проверить настройки ХХ|Аналитик Финал][$Ansveres[&quot;Ansveres&quot;][&quot;8&quot;] to&quot;D&quot;]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="81" name="Аналитик Финал" tags="" position="700,3600" size="100,100">&lt;&lt;set $Sex to 0&gt;&gt;&lt;&lt;script&gt;&gt;
+[[В автопарке большой КПД необходимо проверить настройки ХХ|Аналитик Финал][$Ansveres[&quot;Ansveres&quot;][&quot;8&quot;] to&quot;D&quot;]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="81" name="Аналитик Финал" tags="" position="700,3600" size="100,100">&lt;&lt;script&gt;&gt;
      Get_results(State.getVar(&#39;$UserRole&#39;));
 &lt;&lt;/script&gt;&gt;&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/Anal/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
