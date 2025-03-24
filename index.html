@@ -520,8 +520,11 @@ const userData = getQueryParams();
 window.SetStatus = function(){
 	State.setVar('$UserStatus', userData.UserStatus);
   	State.setVar('$UserRole', userData.UserRole);
+  	if(userData.UserRole == null){
+      	State.setVar('$UserRole', 'VALIDATOR');
+    }
   	if(userData.UserStatus == null){
-    	State.setVar('$UserStatus', 'Cock Blocked');
+      	State.setVar('$UserStatus', 'Cock Blocked');
     }
 }
 
@@ -848,9 +851,8 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 &lt;&lt;set $Anal to 0&gt;&gt;
 &lt;&lt;set $SM to 0&gt;&gt;
 &lt;&lt;set $UserStatus to &quot;&quot;&gt;&gt;
-&lt;&lt;set $UserRole&gt;&gt;
 &lt;&lt;set $currentCharacter to &quot;HR&quot;&gt;&gt;
-&lt;&lt;set $UserRole = &quot;VALIDATOR&quot;&gt;&gt;
+&lt;&lt;set $UserRole&gt;&gt;
 &lt;&lt;set $Sex to 0&gt;&gt;
 
 &lt;&lt;set $sprites to {
