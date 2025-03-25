@@ -523,7 +523,7 @@ window.SetStatus = function(){
   	if(userData.UserRole == null){
       	State.setVar('$UserRole', 'VALIDATOR');
     }
-  	if(userData.UserStatus == null){
+  	if(userData.UserStatus == null && userData.UserName == null){
       	State.setVar('$UserStatus', 'Cock Blocked');
     }
 }
