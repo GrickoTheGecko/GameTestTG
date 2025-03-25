@@ -890,7 +890,7 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
     SetStatus();
 &lt;&lt;/script&gt;&gt;
 
-&lt;&lt;if $UserStatus == &quot;locked&quot;&gt;&gt;
+&lt;&lt;if $UserStatus == &quot;lockeded&quot;&gt;&gt;
 	&lt;&lt;goto  [[Лидерборд]] &gt;&gt;
  &lt;&lt;elseif $UserStatus == &quot;Cock Blocked&quot;&gt;&gt;
 	[[Лидерборд]]
@@ -1276,9 +1276,11 @@ SELECT MAX(salary), MIN(salary), COUNT(*) FROM Employees;
 
 &lt;&lt;goto  [[Результаты]] &gt;&gt;</tw-passagedata><tw-passagedata pid="52" name="Переход на лидерборд" tags="" position="300,4200" size="100,100">&lt;&lt;goto [[Далее|Лидерборд]]&gt;&gt;
 
-&lt;&lt;script&gt;&gt;
-	Get_anthveres(State.getVar(&#39;$UserRole&#39;));
-&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="53" name="Разработчик 1" tags="" position="900,1375" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
+&lt;&lt;if $UserStatus != &quot;Cock Blocked&quot;&gt;&gt;
+    &lt;&lt;script&gt;&gt;
+        Get_anthveres(State.getVar(&#39;$UserRole&#39;));
+    &lt;&lt;/script&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="53" name="Разработчик 1" tags="" position="900,1375" size="100,100">&lt;div class=&quot;text-box&quot;&gt;&lt;div id=&quot;sprite-container&quot;&gt;
     &lt;img id=&quot;sprite-image&quot; src=&quot;Assets/Dev/idle.png&quot; alt=&quot;spriteFrames&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
     &lt;div class=&quot;text-panel&quot;&gt;&lt;&lt;type 60ms&gt;&gt;О, привет! Я Влад, один из BI-разработчиков. Рад, что тебя заинтересовала наша работа. Если ты здесь, значит, готов окунуться в мир данных и SQL-запросов.&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 &lt;/div&gt;
