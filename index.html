@@ -512,6 +512,8 @@ function getQueryParams() {
         UserName: params.get("username"),
       	UserStatus: params.get("status"),
       	UserRole: params.get("role"),
+//new
+      	// UserPseudonym: params.get("pseudonym")
     };
 }
 
@@ -520,6 +522,8 @@ const userData = getQueryParams();
 window.SetStatus = function(){
 	State.setVar('$UserStatus', userData.UserStatus);
   	State.setVar('$UserRole', userData.UserRole);
+//new
+  	// State.setVar('$UserPseudonym',userData.UserPseudonym);
   	if(userData.UserRole == null){
       	State.setVar('$UserRole', 'VALIDATOR');
     }
@@ -571,25 +575,25 @@ window.fetchLeaderboard = async function (profession, topN = 10) {
             const rank = document.createElement('span');
             rank.classList.add('rank');
             rank.textContent = `#${index + 1}`;
-          
-            const username = document.createElement('span');
-            username.classList.add('username');
-            username.textContent = entry.username;
+			//new 
+          	// const pseudonym = document.createElement('span');
+            // pseudonym.classList.add('pseudonym');
+            // pseudonym.textContent = entry.pseudonym;
+           const username = document.createElement('span');
+           username.classList.add('username');
+           username.textContent = entry.username;
 
             const highscore = document.createElement('span');
             highscore.classList.add('highscore');
             highscore.textContent = entry.highscore;
-              			//new 
-          	const pseudonym = document.createElement('span');
-            pseudonym.classList.add('pseudonym');
-            pseudonym.textContent = entry.pseudonym;
-//new
-            if (entry.username === username) {
+//new       
+            if (entry.username === userName) {
+            // if (entry.pseudonym === pseudonym) {
                 li.classList.add('highlight');
             }
 
             li.appendChild(rank);
-          	li.appendChild(pseudonym);
+          	// li.appendChild(pseudonym);
             li.appendChild(username);
             li.appendChild(highscore);
             leaderboard.appendChild(li);
@@ -602,10 +606,10 @@ window.fetchLeaderboard = async function (profession, topN = 10) {
             leaderboard.appendChild(moreLi);
         }
 //new
-      	    const userEntry = sortedData.find(entry => entry.pseudonym === pseudonym);
-        	if (userEntry && !sortedData.slice(0, topN).some(entry => entry.pseudonym === pseudonym)) {
-            const userEntry = sortedData.find(entry => entry.username === userName);
-            if (userEntry && !sortedData.slice(0, topN).some(entry => entry.username === userName)) {
+      	    // const userEntry = sortedData.find(entry => entry.pseudonym === pseudonym);
+        	// if (userEntry && !sortedData.slice(0, topN).some(entry => entry.pseudonym === pseudonym)) {
+       const userEntry = sortedData.find(entry => entry.username === userName);
+       if (userEntry && !sortedData.slice(0, topN).some(entry => entry.username === userName)) {
             const li = document.createElement('li');
             li.classList.add('leaderboard-item', 'highlight');
 
@@ -613,23 +617,23 @@ window.fetchLeaderboard = async function (profession, topN = 10) {
             rank.classList.add('rank');
             rank.textContent = `#${sortedData.indexOf(userEntry) + 1}`;
 //new
-           const pseudonym = document.createElement('span');
-            pseudonym.classList.add('pseudonym');
-            pseudonym.textContent = userEntry.pseudonym.length > 10
-                ? `${userEntry.pseudonym.slice(0, 10)}...`
-                : userEntry.pseudonym;
-            const username = document.createElement('span');
-            username.classList.add('username');
-            username.textContent = userEntry.username.length > 10
-                ? `${userEntry.username.slice(0, 10)}...`
-                : userEntry.username;
+        //    const pseudonym = document.createElement('span');
+        //     pseudonym.classList.add('pseudonym');
+        //     pseudonym.textContent = userEntry.pseudonym.length > 10
+        //         ? `${userEntry.pseudonym.slice(0, 10)}...`
+        //         : userEntry.pseudonym;
+           const username = document.createElement('span');
+           username.classList.add('username');
+           username.textContent = userEntry.username.length > 10
+               ? `${userEntry.username.slice(0, 10)}...`
+               : userEntry.username;
 
             const highscore = document.createElement('span');
             highscore.classList.add('highscore');
             highscore.textContent = userEntry.highscore;
 //new
             li.appendChild(rank);
-            li.appendChild(pseudonym);
+            // li.appendChild(pseudonym);
             li.appendChild(username);
             li.appendChild(highscore);
             leaderboard.appendChild(li);
